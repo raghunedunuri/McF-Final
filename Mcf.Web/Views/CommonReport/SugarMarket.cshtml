@@ -1,0 +1,300 @@
+﻿
+@{
+    ViewBag.Title = null;
+    Layout = null;
+}
+<meta charset="utf-8" />
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+<script src="~/Scripts/offline-exporting.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script src="~/Scripts/jquery.combobox.js"></script>
+<script src="~/Scripts/common-chart.js"></script>
+
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.css" rel="stylesheet" />
+<link href="~/Content/chart.css" rel="stylesheet" />
+
+<div id="demo-wrapper">
+    <div class="chart-title clearfix">
+        <div class="arrowToggle">
+            <span class="link" id="chart_toggle">
+                <i class="fa fa-caret-down"></i>
+            </span>            
+            <div id="chart-dropDown" class="collapse chart-dropDown" style="display:none;">
+                <form>
+                    <ul>
+                        <li class="clearfix">
+                            <span class="grid-lines">
+                                <label for="SelectVGrid" class="switch no-switch">
+                                    <input type="checkbox" name="toggleGrid" id="SelectVGrid" value="SelectVGrid" onclick="SelectGridline(this.value, this.checked)">
+                                    <span class="image" title="Vertical Grid line">
+                                        <img src="~/img/chart-icon/grid-line.png" class="img-responsive" alt="Grid line" />
+                                    </span>
+                                </label>
+                                <label for="SelectHGrid" class="switch no-switch">
+                                    <input type="checkbox" name="toggleGrid" id="SelectHGrid" value="SelectHGrid" onclick="SelectGridline(this.value, this.checked)">
+                                    <span class="image" title="Horizontal Grid line">
+                                        <img src="~/img/chart-icon/grid-line-h.png" class="img-responsive" alt="Grid line" />
+                                    </span>
+                                </label>
+                            </span>
+                            <label class="switch no-switch" for="CheckGrid" id="IsToggleGrid">
+                                <input type="checkbox" id="CheckGrid" onclick="SetGrid()">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Legends"><img src="~/img/chart-icon/legend.png" class="img-responsive" alt="Legends" /></span>
+                            <label class="switch no-switch" for="legends">
+                                <input type="checkbox" id="legends">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Data label"><img src="~/img/chart-icon/data-label.png" class="img-responsive" alt="Data label" /></span>
+                            <label class="switch" for="datalbl">
+                                <input type="checkbox" id="datalbl" onclick="updateChart()">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Drawing"><img src="~/img/chart-icon/drawing.png" class="img-responsive" alt="Drawing" /></span>
+                            <label class="switch no-switch" for="drawing">
+                                <input type="checkbox" id="drawing">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li> 
+                        <li class="clearfix">
+                            <span class="image" title="Cross hair"><img src="~/img/chart-icon/cross-hair.png" class="img-responsive" alt="Cross hair" /></span>
+                            <label class="switch no-switch" for="crosshair">
+                                <input type="checkbox" id="crosshair">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li> 
+                        <li class="clearfix">
+                            <span class="image" title="Utilities"><img src="~/img/chart-icon/utilities.png" class="img-responsive" alt="Utilities" /></span>
+                            <label class="switch no-switch" for="utilities">
+                                <input type="checkbox" id="utilities">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </form>                  
+            </div>
+        </div>
+    </div>
+    <div id="mapBox" style="height:410px;width:100%; border:2px;">
+        @*<div id="containerData" style="height:410px;width:100%"></div>*@
+        <div style="color:#8B3910;font-size:36px;font-family:'Cordia New';text-align:center;width:100%">Projected U.S. Sugar Market Structure</div>
+        <div id="containerData" style="height:400px;width:50%;float:left"></div>
+        <div id="containerData1" style="height:400px;width:50%;float:left"></div>
+    </div>
+</div>
+<script>
+     var year = @Html.Raw(Json.Encode(ViewBag.Years));
+    var refinary = @Html.Raw(Json.Encode(ViewBag.Refinary));
+    var firstYear = @Html.Raw(Json.Encode(ViewBag.FirstYear));
+    var secondYear = @Html.Raw(Json.Encode(ViewBag.SecondYear));
+    
+    function updateChart() {
+       var checkDataLbl = document.getElementById("datalbl");
+        var lbl = 0;
+        if (checkDataLbl.checked == true) {
+            lbl = 1
+        }
+        var pieColors = (function () {
+            var colors = [],
+                base = "#808000",
+                i;
+
+            for (i = 0; i < 10; i += 1) {
+                // Start out with a darkened base color (negative brighten), and end
+                // up with a much brighter color
+                colors.push(Highcharts.Color(base).brighten((i - 1) / 15).get());
+            }
+            return colors;
+        }());
+        Highcharts.chart('containerData', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+                events: {
+                    load: function () {
+                        var label = this.renderer.label("DataSource: USDA")
+                            .css({
+                                width: '400px',
+                                fontSize: '10px',
+
+                            })
+                            .attr({
+                                'stroke': 'silver',
+                                'stroke-width': 0,
+                                'r': 2,
+                                'padding': 10
+                            })
+                            .add();
+
+                        label.align(Highcharts.extend(label.getBBox(), {
+                            align: 'right',
+                            x: 0, // offset
+                            verticalAlign: 'bottom',
+                            y: 0 // offset
+                        }), null, 'spacingBox');
+
+                    }
+                },
+                marginBottom: 120
+
+            },
+            title: {
+                text: year[0]
+            },
+            credits: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    colors: pieColors,
+                    dataLabels: {
+                        enabled: lbl,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: refinary[0],
+                    y: firstYear[0],
+                    //sliced: true,
+                    //selected: true
+                }, {
+                        name: refinary[1],
+                        y: firstYear[1],
+                }, {
+                        name: refinary[2],
+                        y: firstYear[2],
+                }, {
+                        name: refinary[3],
+                        y: firstYear[3],
+                }, {
+                        name: refinary[4],
+                        y: firstYear[4],
+                }, {
+                        name: refinary[5],
+                        y: firstYear[5],
+                }, {
+                        name: refinary[6],
+                        y: firstYear[7],
+                }, {
+                        name: refinary[7],
+                        y: firstYear[6],
+                }]
+            }]
+        });
+        Highcharts.chart('containerData1', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+                events: {
+                    load: function () {
+                        var label = this.renderer.label("DataSource: USDA")
+                            .css({
+                                width: '400px',
+                                fontSize: '10px',
+
+                            })
+                            .attr({
+                                'stroke': 'silver',
+                                'stroke-width': 0,
+                                'r': 2,
+                                'padding': 10
+                            })
+                            .add();
+
+                        label.align(Highcharts.extend(label.getBBox(), {
+                            align: 'right',
+                            x: 0, // offset
+                            verticalAlign: 'bottom',
+                            y: 0 // offset
+                        }), null, 'spacingBox');
+
+                    }
+                },
+                marginBottom: 120
+            },
+            title: {
+                text: year[1]
+            },
+            credits: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    colors: pieColors,
+                    dataLabels: {
+                        enabled: lbl,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: refinary[0],
+                    y: secondYear[0],
+                    //sliced: true,
+                    //selected: true
+                }, {
+                    name: refinary[1],
+                        y: secondYear[1],
+                }, {
+                    name: refinary[2],
+                        y: secondYear[2],
+                }, {
+                    name: refinary[3],
+                        y: secondYear[3],
+                }, {
+                    name: refinary[4],
+                        y: secondYear[4],
+                }, {
+                    name: refinary[5],
+                        y: secondYear[5],
+                }, {
+                    name: refinary[6],
+                        y: secondYear[6],
+                }, {
+                    name: refinary[7],
+                        y: secondYear[7],
+                }]
+            }]
+        });
+    }
+    updateChart();
+</script>
+

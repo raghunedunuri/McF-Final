@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "AddDataSource";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container" ng-controller="datasourcecontroller" ng-cloak>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-4">
+                <lable>Data Source Name:</lable>
+                <input type="text" class="form-control" ng-model="datasource.name" />
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-4">
+                <lable>Header</lable>
+                <input type="text" class="form-control" ng-model="header.name" />
+            </div>
+            <div class="col-xs-2">
+                <lable>Type</lable>
+                <select class="form-control" id="selDataTypes">
+                    <option>number</option>
+                    <option>string</option>
+                    <option>date</option>
+                </select>
+            </div>
+            <div class="col-xs-1">
+                <lable>&zwnj;</lable>
+                <button class="btn btn-success form-control" ng-click="AddHeader(header.name)">ADD</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-12">
+                <div class=""><button class="btn btn-success" ng-click="AddRow()">ADD ROW</button></div>
+                <br />
+                <div ui-grid="gridOptions" ui-grid-pagination ui-grid-edit ui-grid-row-edit ui-grid-cellNav ui-grid-resize-columns ui-grid-selection class="grid" ng-cloak></div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-12">
+                <a class="btn btn-primary" ng-click="SaveGrid()">SAVE</a>
+            </div>
+        </div>
+    </div>
+</div>

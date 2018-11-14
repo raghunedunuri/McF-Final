@@ -1,0 +1,292 @@
+1,"t","Fats and Oils: Oilseed Crushings, Production, Consumption and Stocks: Released July 2, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+1,"t","Soybean Crushing, Production, Consumption and Stocks – United States: May 2018 with Comparisons"
+1,"h","","","","",""
+1,"h","Item","","May 2017","April 2018","May 2018"
+1,"h","","","","",""
+1,"d","Crush","",,,
+1,"d","Soybeans crushed","tons",4739387,5149147,5174040
+1,"d","Crude oil produced","1,000 pounds",1839342,1964922,1966511
+1,"d","Cake and meal produced","tons",3491318,3822338,3846687
+1,"d","  For animal feed","tons",3439981,3781356,3802225
+1,"d","  For edible protein products","tons",51337,40982,44462
+1,"d","Millfeed produced","tons",240712,257585,262574
+1,"d","","",,,
+1,"d","Refine","",,,
+1,"d","Crude oil processed in refining","1,000 pounds",1483689,1477749,1518130
+1,"d","Once refined oil produced","1,000 pounds",1452877,1437977,1460035
+1,"d","","",,,
+1,"d","Consumption","",,,
+1,"d","Crude oil removed for inedible use in processing","1,000 pounds",104473,85570,92909
+1,"d","Once refined oil removed for use in processing","1,000 pounds",1604898,1430438,1531290
+1,"d","  Removed for edible use in processing","1,000 pounds",1287746,1115186,1218228
+1,"d","  Removed for inedible use in processing","1,000 pounds",317152,315252,313062
+1,"d","","",,,
+1,"d","Stocks","",,,
+1,"d","Cake and meal on hand end of month","tons",375156,404468,391812
+1,"d","Millfeed on hand end of month","tons",52836,47658,41315
+1,"d","Crude oil on hand end of month","1,000 pounds",1888717,2316192,2002934
+1,"d","  Crusher","1,000 pounds",878587,924045,834579
+1,"d","  Refiner","1,000 pounds",400412,452654,458395
+1,"d","  Offsite","1,000 pounds",609718,939493,709960
+1,"d","Once refined oil on hand end of month","1,000 pounds",380538,372584,371127
+1,"c",""
+10,"t","Fats and Oils: Oilseed Crushings, Production, Consumption and Stocks: Released July 2, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+10,"t","Soybean Crushing – Regional: May 2018 with Comparisons"
+10,"h","","","",""
+10,"h","","Soybeans crushed","Soybeans crushed","Soybeans crushed"
+10,"h","","","",""
+10,"h","Region","May 2017","April 2018","May 2018"
+10,"h","","","",""
+10,"u","","(tons)","(tons)","(tons)"
+10,"d","Illinois",549154,615746,618675
+10,"d","Iowa",1051302,1071709,1132262
+10,"d","North and East 1/",1115453,1224411,1214147
+10,"d","North Central 2/",607298,659328,719504
+10,"d","South, West and Pacific 3/",561974,684371,544646
+10,"d","West Central 4/",854206,893582,944806
+10,"h","","","",""
+10,"h","","Crude oil produced","Crude oil produced","Crude oil produced"
+10,"h","","","",""
+10,"h","Region","May 2017","April 2018","May 2018"
+10,"h","","","",""
+10,"u","","(1,000 pounds)","(1,000 pounds)","(1,000 pounds)"
+10,"d","Illinois",218366,236412,241685
+10,"d","Iowa",405476,411345,433983
+10,"d","North and East 1/",436505,466765,452616
+10,"d","North Central 2/",233084,246259,265717
+10,"d","South, West and Pacific 3/",216981,260451,207778
+10,"d","West Central 4/",328930,343690,364732
+10,"h","","","",""
+10,"h","","Crude oil stocks at crusher","Crude oil stocks at crusher","Crude oil stocks at crusher"
+10,"h","","","",""
+10,"h","Region","May 2017","April 2018","May 2018"
+10,"h","","","",""
+10,"u","","(1,000 pounds)","(1,000 pounds)","(1,000 pounds)"
+10,"d","Illinois",187476,139509,119597
+10,"d","Iowa",170083,164705,139987
+10,"d","North and East 1/",225011,256429,200790
+10,"d","North Central 2/",219011,253376,269989
+10,"d","South, West and Pacific 3/",49779,68031,53995
+10,"d","West Central 4/",27227,41995,50221
+10,"h","","","",""
+10,"h","","Cake and meal produced","Cake and meal produced","Cake and meal produced"
+10,"h","","","",""
+10,"h","Region","May 2017","April 2018","May 2018"
+10,"h","","","",""
+10,"u","","(tons)","(tons)","(tons)"
+10,"d","Illinois",398152,453840,451608
+10,"d","Iowa",772359,796270,844719
+10,"d","North and East 1/",823617,911120,904003
+10,"d","North Central 2/",456003,496024,543481
+10,"d","South, West and Pacific 3/",413623,501127,399668
+10,"d","West Central 4/",627564,663957,703208
+10,"h","","","",""
+10,"h","","Cake and meal stocks","Cake and meal stocks","Cake and meal stocks"
+10,"h","","","",""
+10,"h","Region","May 2017","April 2018","May 2018"
+10,"h","","","",""
+10,"u","","(tons)","(tons)","(tons)"
+10,"d","Illinois",49202,81479,81209
+10,"d","Iowa",90568,65445,55547
+10,"d","North and East 1/",94476,100661,114294
+10,"d","North Central 2/",23402,31721,40229
+10,"d","South, West and Pacific 3/",78370,68616,38657
+10,"d","West Central 4/",39138,56546,61876
+10,"c",""
+10,"f","1/ North and East includes Indiana, Kentucky, Maryland, Ohio, Pennsylvania and Virginia."
+10,"f","2/ North Central includes Michigan, Minnesota, North Dakota and South Dakota."
+10,"f","3/ South, West, and Pacific includes Alabama, Arkansas, California, Georgia, Louisiana, Mississippi, North Carolina and South Carolina."
+10,"f","4/ West Central includes Kansas, Missouri and Nebraska."
+8,"t","Fats and Oils: Oilseed Crushings, Production, Consumption and Stocks: Released July 2, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+8,"t","Selected Oilseed Crushing, Production, Consumption and Stocks – United States: May 2018 with Comparisons"
+8,"h","","","","",""
+8,"h","Item","","May 2017","April 2018","May 2018"
+8,"h","","","","",""
+8,"d","Canola","",,,
+8,"d","Crush","",,,
+8,"d","  Seeds crushed","tons",113599,152358,130921
+8,"d","  Crude oil produced","1,000 pounds",93072,131216,115066
+8,"d","  Cake and meal produced","tons",69499,85399,73353
+8,"d","Refine","",,,
+8,"d","  Crude oil processed in refining","1,000 pounds",102291,112715,86730
+8,"d","  Once refined oil produced","1,000 pounds",99453,108678,84077
+8,"d","Consumption","",,,
+8,"d","  Crude oil removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","  Once refined oil removed for use in processing","1,000 pounds",132287,150506,137145
+8,"d","    Removed for edible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","    Removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","Stocks","",,,
+8,"d","  Cake and meal on hand end of month","tons",43789,"(D)","(D)"
+8,"d","  Crude oil on hand end of month","1,000 pounds",218989,175880,181168
+8,"d","  Once refined oil on hand end of month","1,000 pounds",75320,79596,81122
+8,"d","","",,,
+8,"d","Cottonseed","",,,
+8,"d","Crush","",,,
+8,"d","  Seeds crushed","tons",155704,141895,166300
+8,"d","  Crude oil produced","1,000 pounds",46922,40917,49346
+8,"d","  Cake and meal produced","tons",67464,61531,70946
+8,"d","Refine","",,,
+8,"d","  Crude oil processed in refining","1,000 pounds",35680,41810,52426
+8,"d","  Once refined oil produced","1,000 pounds",34898,40262,50637
+8,"d","Consumption","",,,
+8,"d","  Crude oil removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","  Once refined oil removed for use in processing","1,000 pounds",50110,46405,58025
+8,"d","    Removed for edible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","    Removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","Stocks","",,,
+8,"d","  Cake and meal on hand end of month","tons",36802,12053,21899
+8,"d","  Crude oil on hand end of month","1,000 pounds","(D)","(D)","(D)"
+8,"d","  Once refined oil on hand end of month","1,000 pounds",44537,53631,49740
+8,"d","","",,,
+8,"d","Coconut","",,,
+8,"d","Refine","",,,
+8,"d","  Crude oil processed in refining","1,000 pounds","(D)","(D)","(D)"
+8,"d","  Once refined oil produced","1,000 pounds","(D)","(D)","(D)"
+8,"d","Consumption","",,,
+8,"d","  Crude oil removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","  Once refined oil removed for use in processing","1,000 pounds",64285,57489,57717
+8,"d","    Removed for edible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","    Removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","Stocks","",,,
+8,"d","  Crude oil on hand end of month","1,000 pounds","(D)","(D)","(D)"
+8,"d","  Once refined oil on hand end of month","1,000 pounds",48563,51427,60090
+8,"d","","",,,
+8,"d","Corn","",,,
+8,"d","Crush","",,,
+8,"d","  Crude oil produced","1,000 pounds",215334,172066,172186
+8,"d","Refine","",,,
+8,"d","  Crude oil processed in refining","1,000 pounds",202535,188003,200211
+8,"d","  Once refined oil produced","1,000 pounds",197588,182551,195342
+8,"d","Consumption","",,,
+8,"d","  Crude oil removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","  Once refined oil removed for use in processing","1,000 pounds",203805,184173,205840
+8,"d","    Removed for edible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","    Removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+8,"d","Stocks","",,,
+8,"d","  Crude oil on hand end of month","1,000 pounds",19436,68184,59499
+8,"d","  Once refined oil on hand end of month","1,000 pounds",68802,66708,52021
+8,"c",""
+8,"c","See footnote(s) at end of table.","--continued"
+9,"t","Fats and Oils: Oilseed Crushings, Production, Consumption and Stocks: Released July 2, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+9,"t","Selected Oilseed Crushing, Production, Consumption and Stocks – United States: May 2018 with Comparisons (continued)"
+9,"h","","","","",""
+9,"h","Item","","May 2017","April 2018","May 2018"
+9,"h","","","","",""
+9,"d","Palm kernel","",,,
+9,"d","Consumption","",,,
+9,"d","  Once refined oil removed for use in processing","1,000 pounds",28024,26282,33039
+9,"d","    Removed for edible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","    Removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","Stocks","",,,
+9,"d","  Once refined oil on hand end of month","1,000 pounds",62551,83484,73450
+9,"d","","",,,
+9,"d","Palm","",,,
+9,"d","Consumption","",,,
+9,"d","  Once refined oil removed for use in processing","1,000 pounds",197930,198369,198080
+9,"d","    Removed for edible use in processing","1,000 pounds",188914,194419,189898
+9,"d","    Removed for inedible use in processing","1,000 pounds",9016,3950,8182
+9,"d","Stocks","",,,
+9,"d","  Once refined oil on hand end of month","1,000 pounds",382521,422563,412729
+9,"d","","",,,
+9,"d","Peanut","",,,
+9,"d","Refine","",,,
+9,"d","  Crude oil processed in refining","1,000 pounds",22568,29706,20758
+9,"d","  Once refined oil produced","1,000 pounds",20551,27643,19814
+9,"d","Consumption","",,,
+9,"d","  Crude oil removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","  Once refined oil removed for use in processing","1,000 pounds",20351,23203,20530
+9,"d","    Removed for edible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","    Removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","Stocks","",,,
+9,"d","  Crude oil on hand end of month","1,000 pounds","(D)","(D)","(D)"
+9,"d","  Once refined oil on hand end of month","1,000 pounds","(D)","(D)","(D)"
+9,"d","","",,,
+9,"d","Safflower","",,,
+9,"d","Refine","",,,
+9,"d","  Crude oil processed in refining","1,000 pounds",11771,"(D)","(D)"
+9,"d","  Once refined oil produced","1,000 pounds",11771,"(D)","(D)"
+9,"d","Consumption","",,,
+9,"d","  Crude oil removed for inedible use in processing","1,000 pounds",-,-,-
+9,"d","  Once refined oil removed for use in processing","1,000 pounds",3654,"(D)","(D)"
+9,"d","    Removed for edible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","    Removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","Stocks","",,,
+9,"d","  Crude oil on hand end of month","1,000 pounds",7397,9220,10913
+9,"d","  Once refined oil on hand end of month","1,000 pounds",11599,2897,"(D)"
+9,"d","","",,,
+9,"d","Sunflower","",,,
+9,"d","Refine","",,,
+9,"d","  Crude oil processed in refining","1,000 pounds",27600,"(D)",32091
+9,"d","  Once refined oil produced","1,000 pounds",25963,"(D)",30541
+9,"d","Consumption","",,,
+9,"d","  Crude oil removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","  Once refined oil removed for use in processing","1,000 pounds",43353,"(D)","(D)"
+9,"d","    Removed for edible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","    Removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","Stocks","",,,
+9,"d","  Crude oil on hand end of month","1,000 pounds",81539,70010,80879
+9,"d","  Once refined oil on hand end of month","1,000 pounds",44232,79154,95138
+9,"d","","",,,
+9,"d","Vegetable foots, raw and acidulated","",,,
+9,"d","Refine","",,,
+9,"d","  Oil produced","1,000 pounds","(D)","(D)","(D)"
+9,"d","Consumption","",,,
+9,"d","  Oil removed for inedible use in processing","1,000 pounds","(D)","(D)","(D)"
+9,"d","Stocks","",,,
+9,"d","  Oil on hand end of month","1,000 pounds","(D)","(D)","(D)"
+9,"c",""
+9,"f","-  Represents zero."
+9,"f","(D)  Withheld to avoid disclosing data for individual operations."
+5,"t","Fats and Oils: Oilseed Crushings, Production, Consumption and Stocks: Released July 2, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+5,"t","Animal Fats and Oils Production, Consumption and Stocks – United States: May 2018 with Comparisons"
+5,"h","","","",""
+5,"h","Item","May 2017","April 2018","May 2018"
+5,"h","","","",""
+5,"u","","(1,000 pounds)","(1,000 pounds)","(1,000 pounds)"
+5,"d","Choice white grease",,,
+5,"d","  Production",108828,104166,113594
+5,"d","  Removed for inedible use",108956,105285,112703
+5,"d","  Stocks on hand end of month",7907,6997,7860
+5,"d","Feather meal",,,
+5,"d","  Production",101340,90328,99524
+5,"d","  Stocks on hand end of month",21892,22836,24002
+5,"d","Lard",,,
+5,"d","  Production",31898,26539,29882
+5,"d","  Removed for use in processing",31245,24443,28202
+5,"d","    Removed for edible use in processing","(D)","(D)","(D)"
+5,"d","    Removed for inedible use in processing","(D)","(D)","(D)"
+5,"d","  Stocks on hand end of month",10981,16030,19567
+5,"d","Meat meal, meat and bone meal, and dry rendered tankage",,,
+5,"d","  Production",516432,464909,469509
+5,"d","  Stocks on hand end of month",46128,50429,49251
+5,"d","Other grease",,,
+5,"d","  Production",67120,48386,55596
+5,"d","  Removed for inedible use in processing",69022,52175,51797
+5,"d","  Stocks on hand end of month","(D)","(D)","(D)"
+5,"d","Poultry fats",,,
+5,"d","  Production",200595,192964,214202
+5,"d","  Removed for inedible use in processing",194216,193085,211414
+5,"d","  Stocks on hand end of month",22148,23826,26336
+5,"d","Poultry by-product meals",,,
+5,"d","  Production",275136,257530,280341
+5,"d","  Stocks on hand end of month",64037,69789,74189
+5,"d","Tallow, edible",,,
+5,"d","  Production",73310,82637,88666
+5,"d","  Removed for use in processing",72526,83223,90813
+5,"d","    Removed for edible use in processing","(D)","(D)","(D)"
+5,"d","    Removed for inedible use in processing","(D)","(D)","(D)"
+5,"d","  Stocks on hand end of month",21547,24151,48405
+5,"d","Tallow, inedible",,,
+5,"d","  Production",321310,305011,328252
+5,"d","  Removed for inedible use in processing",291575,305746,335428
+5,"d","  Stocks on hand end of month",73612,90779,85193
+5,"d","Tallow, technical",,,
+5,"d","  Production",106920,92787,108719
+5,"d","  Removed for inedible use in processing",111818,99887,115393
+5,"d","  Stocks on hand end of month","(D)","(D)","(D)"
+5,"d","Yellow grease",,,
+5,"d","  Production",171163,175099,186554
+5,"d","  Removed for inedible use in processing",158264,183104,192678
+5,"d","  Stocks on hand end of month",79184,94140,88198
+5,"c",""
+5,"f","(D)  Withheld to avoid disclosing data for individual operations."

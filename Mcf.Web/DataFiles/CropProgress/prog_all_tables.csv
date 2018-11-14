@@ -1,0 +1,821 @@
+2,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+2,"t","Corn Silking – Selected States"
+2,"t","[These 18 States planted 92% of the 2017 corn acreage]"
+2,"h","","","","",""
+2,"h","","Week ending","Week ending","Week ending",""
+2,"h","","","","",""
+2,"h","State","July 15,","July 8,","July 15,","2013-2017"
+2,"h","","2017","2018","2018","Average"
+2,"h","","","","",""
+2,"u","","(percent)","(percent)","(percent)","(percent)"
+2,"d","Colorado",8,4,17,13
+2,"d","Illinois",59,76,93,57
+2,"d","Indiana",36,49,74,39
+2,"d","Iowa",33,35,68,32
+2,"d","Kansas",52,48,64,53
+2,"d","Kentucky",74,62,77,63
+2,"d","Michigan",13,5,26,15
+2,"d","Minnesota",18,8,45,19
+2,"d","Missouri",77,76,91,68
+2,"d","Nebraska",42,31,65,38
+2,"d","North Carolina",92,82,90,92
+2,"d","North Dakota",10,6,33,11
+2,"d","Ohio",31,30,63,27
+2,"d","Pennsylvania",21,13,28,27
+2,"d","South Dakota",10,10,48,17
+2,"d","Tennessee",89,83,91,83
+2,"d","Texas",69,68,76,75
+2,"d","Wisconsin",4,6,30,11
+2,"d","",,,,
+2,"d","18 States",37,37,63,37
+2,"c",""
+88,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+88,"t","Corn Condition – Selected States: Week Ending July 15, 2018"
+88,"t","[These 18 States planted 92% of the 2017 corn acreage]"
+88,"h","","","","","",""
+88,"h","State","Very poor","Poor","Fair","Good","Excellent"
+88,"h","","","","","",""
+88,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+88,"d","Colorado",4,6,20,62,8
+88,"d","Illinois",2,4,14,51,29
+88,"d","Indiana",2,6,20,52,20
+88,"d","Iowa",2,4,16,54,24
+88,"d","Kansas",6,14,32,42,6
+88,"d","Kentucky",-,2,14,69,15
+88,"d","Michigan",5,15,25,47,8
+88,"d","Minnesota",2,5,16,52,25
+88,"d","Missouri",8,17,42,29,4
+88,"d","Nebraska",1,2,11,61,25
+88,"d","North Carolina",7,20,37,32,4
+88,"d","North Dakota",-,1,11,68,20
+88,"d","Ohio",1,3,15,56,25
+88,"d","Pennsylvania",1,8,25,54,12
+88,"d","South Dakota",3,4,24,52,17
+88,"d","Tennessee",-,2,15,51,32
+88,"d","Texas",11,21,35,33,-
+88,"d","Wisconsin",1,4,13,48,34
+88,"d","",,,,,
+88,"d","18 States",3,6,19,51,21
+88,"d","",,,,,
+88,"d","Previous week",2,5,18,54,21
+88,"d","Previous year",3,8,25,51,13
+88,"c",""
+88,"f","-  Represents zero."
+8,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+8,"t","Soybeans Blooming – Selected States"
+8,"t","[These 18 States planted 96% of the 2017 soybean acreage]"
+8,"h","","","","",""
+8,"h","","Week ending","Week ending","Week ending",""
+8,"h","","","","",""
+8,"h","State","July 15,","July 8,","July 15,","2013-2017"
+8,"h","","2017","2018","2018","Average"
+8,"h","","","","",""
+8,"u","","(percent)","(percent)","(percent)","(percent)"
+8,"d","Arkansas",83,81,89,66
+8,"d","Illinois",52,64,79,48
+8,"d","Indiana",47,54,70,46
+8,"d","Iowa",51,46,65,45
+8,"d","Kansas",42,38,59,31
+8,"d","Kentucky",34,28,39,27
+8,"d","Louisiana",90,92,96,85
+8,"d","Michigan",49,27,46,43
+8,"d","Minnesota",45,32,56,47
+8,"d","Mississippi",84,79,88,72
+8,"d","Missouri",41,43,56,28
+8,"d","Nebraska",64,50,65,53
+8,"d","North Carolina",33,23,38,28
+8,"d","North Dakota",38,42,67,44
+8,"d","Ohio",38,44,66,36
+8,"d","South Dakota",46,30,53,50
+8,"d","Tennessee",55,42,58,38
+8,"d","Wisconsin",34,29,49,36
+8,"d","",,,,
+8,"d","18 States",49,47,65,45
+8,"c",""
+9,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+9,"t","Soybeans Setting Pods – Selected States"
+9,"t","[These 18 States planted 96% of the 2017 soybean acreage]"
+9,"h","","","","",""
+9,"h","","Week ending","Week ending","Week ending",""
+9,"h","","","","",""
+9,"h","State","July 15,","July 8,","July 15,","2013-2017"
+9,"h","","2017","2018","2018","Average"
+9,"h","","","","",""
+9,"u","","(percent)","(percent)","(percent)","(percent)"
+9,"d","Arkansas",61,45,63,39
+9,"d","Illinois",15,21,44,11
+9,"d","Indiana",11,19,37,12
+9,"d","Iowa",10,7,21,9
+9,"d","Kansas",6,5,13,4
+9,"d","Kentucky",14,3,17,7
+9,"d","Louisiana",79,75,82,65
+9,"d","Michigan",14,2,9,8
+9,"d","Minnesota",9,1,15,7
+9,"d","Mississippi",59,50,63,38
+9,"d","Missouri",12,4,19,5
+9,"d","Nebraska",9,1,16,9
+9,"d","North Carolina",11,2,11,10
+9,"d","North Dakota",4,2,19,7
+9,"d","Ohio",8,2,23,5
+9,"d","South Dakota",4,1,9,6
+9,"d","Tennessee",20,10,25,13
+9,"d","Wisconsin",4,2,13,7
+9,"d","",,,,
+9,"d","18 States",15,11,26,11
+9,"c",""
+35,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+35,"t","Soybean Condition – Selected States: Week Ending July 15, 2018"
+35,"t","[These 18 States planted 96% of the 2017 soybean acreage]"
+35,"h","","","","","",""
+35,"h","State","Very poor","Poor","Fair","Good","Excellent"
+35,"h","","","","","",""
+35,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+35,"d","Arkansas",4,10,27,43,16
+35,"d","Illinois",3,4,20,48,25
+35,"d","Indiana",2,7,23,53,15
+35,"d","Iowa",2,5,18,54,21
+35,"d","Kansas",3,12,40,41,4
+35,"d","Kentucky",1,3,16,69,11
+35,"d","Louisiana",1,8,36,43,12
+35,"d","Michigan",3,13,26,52,6
+35,"d","Minnesota",1,5,19,54,21
+35,"d","Mississippi",-,2,27,54,17
+35,"d","Missouri",6,15,39,35,5
+35,"d","Nebraska",1,3,13,63,20
+35,"d","North Carolina",7,12,39,40,2
+35,"d","North Dakota",1,2,15,69,13
+35,"d","Ohio",1,4,25,53,17
+35,"d","South Dakota",3,5,29,53,10
+35,"d","Tennessee",-,1,15,59,25
+35,"d","Wisconsin",1,4,14,51,30
+35,"d","",,,,,
+35,"d","18 States",2,6,23,53,16
+35,"d","",,,,,
+35,"d","Previous week",2,5,22,55,16
+35,"d","Previous year",3,8,28,51,10
+35,"c",""
+35,"f","-  Represents zero."
+89,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+89,"t","Cotton Squaring – Selected States"
+89,"t","[These 15 States planted 99% of the 2017 cotton acreage]"
+89,"h","","","","",""
+89,"h","","Week ending","Week ending","Week ending",""
+89,"h","","","","",""
+89,"h","State","July 15,","July 8,","July 15,","2013-2017"
+89,"h","","2017","2018","2018","Average"
+89,"h","","","","",""
+89,"u","","(percent)","(percent)","(percent)","(percent)"
+89,"d","Alabama",75,65,71,83
+89,"d","Arizona",85,85,94,87
+89,"d","Arkansas",99,92,99,99
+89,"d","California",59,55,65,85
+89,"d","Georgia",76,70,80,81
+89,"d","Kansas",25,55,69,35
+89,"d","Louisiana",96,95,98,94
+89,"d","Mississippi",77,73,86,82
+89,"d","Missouri",80,71,95,72
+89,"d","North Carolina",78,70,78,81
+89,"d","Oklahoma",49,40,55,42
+89,"d","South Carolina",67,49,63,68
+89,"d","Tennessee",82,80,93,72
+89,"d","Texas",64,51,66,63
+89,"d","Virginia",82,66,81,79
+89,"d","",,,,
+89,"d","15 States",69,59,72,70
+89,"c",""
+18,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+18,"t","Cotton Setting Bolls – Selected States"
+18,"t","[These 15 States planted 99% of the 2017 cotton acreage]"
+18,"h","","","","",""
+18,"h","","Week ending","Week ending","Week ending",""
+18,"h","","","","",""
+18,"h","State","July 15,","July 8,","July 15,","2013-2017"
+18,"h","","2017","2018","2018","Average"
+18,"h","","","","",""
+18,"u","","(percent)","(percent)","(percent)","(percent)"
+18,"d","Alabama",32,28,46,33
+18,"d","Arizona",53,32,40,50
+18,"d","Arkansas",71,60,85,62
+18,"d","California",9,5,15,40
+18,"d","Georgia",29,21,36,37
+18,"d","Kansas",-,-,2,2
+18,"d","Louisiana",67,68,77,61
+18,"d","Mississippi",36,30,51,38
+18,"d","Missouri",15,33,71,12
+18,"d","North Carolina",22,11,24,24
+18,"d","Oklahoma",15,10,15,13
+18,"d","South Carolina",31,5,21,27
+18,"d","Tennessee",26,20,33,19
+18,"d","Texas",20,18,23,17
+18,"d","Virginia",17,5,12,12
+18,"d","",,,,
+18,"d","15 States",25,21,31,24
+18,"c",""
+18,"f","-  Represents zero."
+92,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+92,"t","Cotton Condition – Selected States: Week Ending July 15, 2018"
+92,"t","[These 15 States planted 99% of the 2017 cotton acreage]"
+92,"h","","","","","",""
+92,"h","State","Very poor","Poor","Fair","Good","Excellent"
+92,"h","","","","","",""
+92,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+92,"d","Alabama",-,1,17,62,20
+92,"d","Arizona",-,-,63,29,8
+92,"d","Arkansas",-,4,10,46,40
+92,"d","California",-,-,10,70,20
+92,"d","Georgia",1,6,25,57,11
+92,"d","Kansas",1,3,33,56,7
+92,"d","Louisiana",-,3,55,39,3
+92,"d","Mississippi",-,3,31,47,19
+92,"d","Missouri",-,4,27,56,13
+92,"d","North Carolina",10,16,25,46,3
+92,"d","Oklahoma",17,24,43,16,-
+92,"d","South Carolina",-,2,23,62,13
+92,"d","Tennessee",-,-,8,65,27
+92,"d","Texas",16,26,35,21,2
+92,"d","Virginia",3,5,22,68,2
+92,"d","",,,,,
+92,"d","15 States",10,18,31,34,7
+92,"d","",,,,,
+92,"d","Previous week",8,19,32,34,7
+92,"d","Previous year",1,9,30,46,14
+92,"c",""
+92,"f","-  Represents zero."
+22,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+22,"t","Sorghum Headed – Selected States"
+22,"t","[These 11 States planted 99% of the 2017 sorghum acreage]"
+22,"h","","","","",""
+22,"h","","Week ending","Week ending","Week ending",""
+22,"h","","","","",""
+22,"h","State","July 15,","July 8,","July 15,","2013-2017"
+22,"h","","2017","2018","2018","Average"
+22,"h","","","","",""
+22,"u","","(percent)","(percent)","(percent)","(percent)"
+22,"d","Arkansas",62,34,62,64
+22,"d","Colorado",4,1,3,4
+22,"d","Illinois",4,4,38,15
+22,"d","Kansas",5,6,10,5
+22,"d","Louisiana",90,87,94,91
+22,"d","Missouri",17,18,30,19
+22,"d","Nebraska",5,13,23,7
+22,"d","New Mexico",5,-,1,4
+22,"d","Oklahoma",25,17,31,24
+22,"d","South Dakota",5,5,11,17
+22,"d","Texas",73,62,70,69
+22,"d","",,,,
+22,"d","11 States",31,25,31,32
+22,"c",""
+22,"f","-  Represents zero."
+23,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+23,"t","Sorghum Coloring – Selected States"
+23,"t","[These 11 States planted 99% of the 2017 sorghum acreage]"
+23,"h","","","","",""
+23,"h","","Week ending","Week ending","Week ending",""
+23,"h","","","","",""
+23,"h","State","July 15,","July 8,","July 15,","2013-2017"
+23,"h","","2017","2018","2018","Average"
+23,"h","","","","",""
+23,"u","","(percent)","(percent)","(percent)","(percent)"
+23,"d","Arkansas",2,-,2,9
+23,"d","Colorado",-,-,-,-
+23,"d","Illinois",-,-,-,-
+23,"d","Kansas",-,-,-,-
+23,"d","Louisiana",56,32,54,52
+23,"d","Missouri",3,1,3,1
+23,"d","Nebraska",-,-,-,-
+23,"d","New Mexico",-,-,-,-
+23,"d","Oklahoma",9,-,8,3
+23,"d","South Dakota",-,-,-,-
+23,"d","Texas",57,56,60,54
+23,"d","",,,,
+23,"d","11 States",20,17,19,20
+23,"c",""
+23,"f","-  Represents zero."
+38,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+38,"t","Sorghum Condition – Selected States: Week Ending July 15, 2018"
+38,"t","[These 11 States planted 99% of the 2017 sorghum acreage]"
+38,"h","","","","","",""
+38,"h","State","Very poor","Poor","Fair","Good","Excellent"
+38,"h","","","","","",""
+38,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+38,"d","Arkansas",-,1,49,38,12
+38,"d","Colorado",14,12,30,40,4
+38,"d","Illinois",-,8,31,55,6
+38,"d","Kansas",2,5,34,54,5
+38,"d","Louisiana",-,6,73,21,-
+38,"d","Missouri",1,14,48,34,3
+38,"d","Nebraska",-,2,16,65,17
+38,"d","New Mexico",-,3,55,40,2
+38,"d","Oklahoma",1,6,39,49,5
+38,"d","South Dakota",1,2,24,72,1
+38,"d","Texas",9,26,40,24,1
+38,"d","",,,,,
+38,"d","11 States",5,12,36,43,4
+38,"d","",,,,,
+38,"d","Previous week",4,11,34,46,5
+38,"d","Previous year",2,6,29,56,7
+38,"c",""
+38,"f","-  Represents zero."
+43,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+43,"t","Peanuts Pegging – Selected States"
+43,"t","[These 8 States planted 96% of the 2017 peanut acreage]"
+43,"h","","","","",""
+43,"h","","Week ending","Week ending","Week ending",""
+43,"h","","","","",""
+43,"h","State","July 15,","July 8,","July 15,","2013-2017"
+43,"h","","2017","2018","2018","Average"
+43,"h","","","","",""
+43,"u","","(percent)","(percent)","(percent)","(percent)"
+43,"d","Alabama",58,62,64,61
+43,"d","Florida",73,49,67,76
+43,"d","Georgia",80,74,83,70
+43,"d","North Carolina",66,49,62,65
+43,"d","Oklahoma",49,52,54,50
+43,"d","South Carolina",76,55,59,76
+43,"d","Texas",34,20,42,42
+43,"d","Virginia",40,33,45,38
+43,"d","",,,,
+43,"d","8 States",68,58,69,66
+43,"c",""
+55,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+55,"t","Peanut Condition – Selected States: Week Ending July 15, 2018"
+55,"t","[These 8 States harvested 96% of the 2017 peanut acreage]"
+55,"h","","","","","",""
+55,"h","State","Very poor","Poor","Fair","Good","Excellent"
+55,"h","","","","","",""
+55,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+55,"d","Alabama",-,3,24,67,6
+55,"d","Florida",-,1,10,78,11
+55,"d","Georgia",1,5,25,59,10
+55,"d","North Carolina",4,5,29,57,5
+55,"d","Oklahoma",-,3,15,73,9
+55,"d","South Carolina",-,-,18,59,23
+55,"d","Texas",-,1,51,48,-
+55,"d","Virginia",2,5,18,70,5
+55,"d","",,,,,
+55,"d","8 States",1,3,27,60,9
+55,"d","",,,,,
+55,"d","Previous week",1,3,28,61,7
+55,"d","Previous year",-,4,21,59,16
+55,"c",""
+55,"f","-  Represents zero."
+32,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+32,"t","Rice Headed – Selected States"
+32,"t","[These 6 States planted 100% of the 2017 rice acreage]"
+32,"h","","","","",""
+32,"h","","Week ending","Week ending","Week ending",""
+32,"h","","","","",""
+32,"h","State","July 15,","July 8,","July 15,","2013-2017"
+32,"h","","2017","2018","2018","Average"
+32,"h","","","","",""
+32,"u","","(percent)","(percent)","(percent)","(percent)"
+32,"d","Arkansas",16,10,21,17
+32,"d","California",13,10,12,13
+32,"d","Louisiana",70,56,74,72
+32,"d","Mississippi",75,19,30,42
+32,"d","Missouri",25,18,27,15
+32,"d","Texas",79,66,78,70
+32,"d","",,,,
+32,"d","6 States",31,21,32,29
+32,"c",""
+84,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+84,"t","Rice Condition – Selected States: Week Ending July 15, 2018"
+84,"t","[These 6 States planted 100% of the 2017 rice acreage]"
+84,"h","","","","","",""
+84,"h","State","Very poor","Poor","Fair","Good","Excellent"
+84,"h","","","","","",""
+84,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+84,"d","Arkansas",3,7,30,43,17
+84,"d","California",-,-,10,85,5
+84,"d","Louisiana",-,5,22,63,10
+84,"d","Mississippi",-,-,24,58,18
+84,"d","Missouri",-,12,20,48,20
+84,"d","Texas",-,3,45,47,5
+84,"d","",,,,,
+84,"d","6 States",1,5,25,56,13
+84,"d","",,,,,
+84,"d","Previous week",1,5,22,59,13
+84,"d","Previous year",1,4,25,46,24
+84,"c",""
+84,"f","-  Represents zero."
+93,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+93,"t","Winter Wheat Harvested – Selected States"
+93,"t","[These 18 States harvested 90% of the 2017 winter wheat acreage]"
+93,"h","","","","",""
+93,"h","","Week ending","Week ending","Week ending",""
+93,"h","","","","",""
+93,"h","State","July 15,","July 8,","July 15,","2013-2017"
+93,"h","","2017","2018","2018","Average"
+93,"h","","","","",""
+93,"u","","(percent)","(percent)","(percent)","(percent)"
+93,"d","Arkansas",100,100,100,100
+93,"d","California",78,70,90,90
+93,"d","Colorado",69,45,80,56
+93,"d","Idaho",5,1,5,5
+93,"d","Illinois",99,92,97,93
+93,"d","Indiana",88,80,94,79
+93,"d","Kansas",97,92,99,95
+93,"d","Michigan",31,9,38,19
+93,"d","Missouri",99,95,100,95
+93,"d","Montana",8,-,-,4
+93,"d","Nebraska",79,25,62,51
+93,"d","North Carolina",99,95,98,96
+93,"d","Ohio",86,68,87,66
+93,"d","Oklahoma",98,99,100,98
+93,"d","Oregon",11,7,17,17
+93,"d","South Dakota",39,2,20,20
+93,"d","Texas",100,86,95,98
+93,"d","Washington",7,1,8,9
+93,"d","",,,,
+93,"d","18 States",74,63,74,71
+93,"c",""
+93,"f","-  Represents zero."
+28,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+28,"t","Spring Wheat Headed – Selected States"
+28,"t","[These 6 States planted 99% of the 2017 spring wheat acreage]"
+28,"h","","","","",""
+28,"h","","Week ending","Week ending","Week ending",""
+28,"h","","","","",""
+28,"h","State","July 15,","July 8,","July 15,","2013-2017"
+28,"h","","2017","2018","2018","Average"
+28,"h","","","","",""
+28,"u","","(percent)","(percent)","(percent)","(percent)"
+28,"d","Idaho",77,81,88,88
+28,"d","Minnesota",99,92,99,90
+28,"d","Montana",81,68,83,80
+28,"d","North Dakota",90,81,94,82
+28,"d","South Dakota",99,90,96,96
+28,"d","Washington",93,96,100,97
+28,"d","",,,,
+28,"d","6 States",89,81,93,85
+28,"c",""
+90,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+90,"t","Spring Wheat Condition – Selected States: Week Ending July 15, 2018"
+90,"t","[These 6 States planted 99% of the 2017 spring wheat acreage]"
+90,"h","","","","","",""
+90,"h","State","Very poor","Poor","Fair","Good","Excellent"
+90,"h","","","","","",""
+90,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+90,"d","Idaho",7,3,11,65,14
+90,"d","Minnesota",-,-,14,50,36
+90,"d","Montana",1,3,16,70,10
+90,"d","North Dakota",1,3,13,72,11
+90,"d","South Dakota",3,10,36,47,4
+90,"d","Washington",-,2,20,69,9
+90,"d","",,,,,
+90,"d","6 States",1,3,16,67,13
+90,"d","",,,,,
+90,"d","Previous week",1,3,16,66,14
+90,"d","Previous year",21,20,25,28,6
+90,"c",""
+90,"f","-  Represents zero."
+48,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+48,"t","Barley Headed – Selected States"
+48,"t","[These 5 States planted 80% of the 2017 barley acreage]"
+48,"h","","","","",""
+48,"h","","Week ending","Week ending","Week ending",""
+48,"h","","","","",""
+48,"h","State","July 15,","July 8,","July 15,","2013-2017"
+48,"h","","2017","2018","2018","Average"
+48,"h","","","","",""
+48,"u","","(percent)","(percent)","(percent)","(percent)"
+48,"d","Idaho",85,85,89,89
+48,"d","Minnesota",98,87,95,88
+48,"d","Montana",81,64,84,90
+48,"d","North Dakota",92,86,95,84
+48,"d","Washington",89,90,95,96
+48,"d","",,,,
+48,"d","5 States",87,78,90,88
+48,"c",""
+91,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+91,"t","Barley Condition – Selected States: Week Ending July 15, 2018"
+91,"t","[These 5 States planted 80% of the 2017 barley acreage]"
+91,"h","","","","","",""
+91,"h","State","Very poor","Poor","Fair","Good","Excellent"
+91,"h","","","","","",""
+91,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+91,"d","Idaho",1,2,7,70,20
+91,"d","Minnesota",-,1,16,52,31
+91,"d","Montana",1,3,14,66,16
+91,"d","North Dakota",1,1,13,77,8
+91,"d","Washington",-,1,15,72,12
+91,"d","",,,,,
+91,"d","5 States",1,2,12,70,15
+91,"d","",,,,,
+91,"d","Previous week",1,2,12,68,17
+91,"d","Previous year",8,10,29,43,10
+91,"c",""
+91,"f","-  Represents zero."
+86,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+86,"t","Oats Headed - Selected States"
+86,"t","[These 9 States planted 67% of the 2017 oat acreage]"
+86,"h","","","","",""
+86,"h","","Week ending","Week ending","Week ending",""
+86,"h","","","","",""
+86,"h","State","July 15,","July 8,","July 15,","2013-2017"
+86,"h","","2017","2018","2018","Average"
+86,"h","","","","",""
+86,"u","","(percent)","(percent)","(percent)","(percent)"
+86,"d","Iowa",99,97,99,98
+86,"d","Minnesota",96,85,94,92
+86,"d","Nebraska",100,99,100,99
+86,"d","North Dakota",91,77,89,83
+86,"d","Ohio",99,95,100,98
+86,"d","Pennsylvania",95,81,87,91
+86,"d","South Dakota",99,95,98,98
+86,"d","Texas",100,100,100,100
+86,"d","Wisconsin",92,81,92,92
+86,"d","",,,,
+86,"d","9 States",96,91,96,95
+86,"c",""
+52,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+52,"t","Oats Harvested – Selected States"
+52,"t","[These 9 States harvested 67% of the 2017 oat acreage]"
+52,"h","","","","",""
+52,"h","","Week ending","Week ending","Week ending",""
+52,"h","","","","",""
+52,"h","State","July 15,","July 8,","July 15,","2013-2017"
+52,"h","","2017","2018","2018","Average"
+52,"h","","","","",""
+52,"u","","(percent)","(percent)","(percent)","(percent)"
+52,"d","Iowa",16,4,18,17
+52,"d","Minnesota",2,-,-,1
+52,"d","Nebraska",44,16,52,32
+52,"d","North Dakota",-,-,-,-
+52,"d","Ohio",30,10,43,17
+52,"d","Pennsylvania",-,-,2,1
+52,"d","South Dakota",9,-,6,11
+52,"d","Texas",100,96,100,97
+52,"d","Wisconsin",1,-,1,4
+52,"d","",,,,
+52,"d","9 States",13,10,16,14
+52,"c",""
+52,"f","-  Represents zero."
+85,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+85,"t","Oat Condition – Selected States: Week Ending July 15, 2018"
+85,"t","[These 9 States planted 67% of the 2017 oat acreage]"
+85,"h","","","","","",""
+85,"h","State","Very poor","Poor","Fair","Good","Excellent"
+85,"h","","","","","",""
+85,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+85,"d","Iowa",-,2,21,61,16
+85,"d","Minnesota",-,2,20,61,17
+85,"d","Nebraska",1,3,36,53,7
+85,"d","North Dakota",2,1,10,76,11
+85,"d","Ohio",-,2,21,65,12
+85,"d","Pennsylvania",-,8,30,55,7
+85,"d","South Dakota",1,3,27,63,6
+85,"d","Texas",12,4,26,44,14
+85,"d","Wisconsin",-,1,12,62,25
+85,"d","",,,,,
+85,"d","9 States",4,3,22,58,13
+85,"d","",,,,,
+85,"d","Previous week",3,3,21,60,13
+85,"d","Previous year",9,13,27,42,9
+85,"c",""
+85,"f","-  Represents zero."
+82,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+82,"t","Pasture and Range Condition – Selected States: Week Ending July 15, 2018"
+82,"t","[National pasture and range conditions for selected States are weighted based on pasture acreage and/or livestock inventories]"
+82,"h","","","","","",""
+82,"h","State","Very poor","Poor","Fair","Good","Excellent"
+82,"h","","","","","",""
+82,"u","","(percent)","(percent)","(percent)","(percent)","(percent)"
+82,"d","Alabama",-,1,9,70,20
+82,"d","Arizona",68,20,8,4,-
+82,"d","Arkansas",18,33,35,13,1
+82,"d","California",30,15,15,35,5
+82,"d","Colorado",30,24,25,21,-
+82,"d","Connecticut",5,10,30,55,-
+82,"d","Delaware",31,8,13,46,2
+82,"d","Florida",1,5,21,48,25
+82,"d","Georgia",1,4,25,58,12
+82,"d","Idaho",1,5,29,61,4
+82,"d","Illinois",2,13,28,45,12
+82,"d","Indiana",2,9,36,46,7
+82,"d","Iowa",3,9,26,51,11
+82,"d","Kansas",8,23,40,27,2
+82,"d","Kentucky",2,7,24,58,9
+82,"d","Louisiana",5,14,40,35,6
+82,"d","Maine",-,26,36,38,-
+82,"d","Maryland",3,8,27,55,7
+82,"d","Massachusetts",-,10,25,65,-
+82,"d","Michigan",9,22,36,27,6
+82,"d","Minnesota",1,6,20,57,16
+82,"d","Mississippi",1,8,35,50,6
+82,"d","Missouri",28,33,30,9,-
+82,"d","Montana",1,7,21,49,22
+82,"d","Nebraska",2,6,19,59,14
+82,"d","Nevada",20,25,40,15,-
+82,"d","New Hampshire",12,20,48,20,-
+82,"d","New Jersey",-,3,44,53,-
+82,"d","New Mexico",21,44,28,6,1
+82,"d","New York",7,15,25,45,8
+82,"d","North Carolina",3,13,40,42,2
+82,"d","North Dakota",1,5,23,63,8
+82,"d","Ohio",2,7,32,54,5
+82,"d","Oklahoma",8,14,30,47,1
+82,"d","Oregon",6,23,34,35,2
+82,"d","Pennsylvania",-,5,61,29,5
+82,"d","Rhode Island",15,20,35,30,-
+82,"d","South Carolina",-,4,30,63,3
+82,"d","South Dakota",3,8,35,50,4
+82,"d","Tennessee",1,6,26,56,11
+82,"d","Texas",13,24,35,23,5
+82,"d","Utah",15,34,36,15,-
+82,"d","Vermont",-,17,51,32,-
+82,"d","Virginia",2,11,40,39,8
+82,"d","Washington",3,6,39,49,3
+82,"d","West Virginia",-,6,38,47,9
+82,"d","Wisconsin",-,3,14,54,29
+82,"d","Wyoming",8,6,23,54,9
+82,"d","",,,,,
+82,"d","48 States",9,15,29,39,8
+82,"d","",,,,,
+82,"d","Previous week",7,14,28,42,9
+82,"d","Previous year",7,12,29,44,8
+82,"c",""
+82,"f","-  Represents zero."
+130,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+130,"t","Days Suitable for Fieldwork - Selected States"
+130,"t","[Days suitable for Fieldwork are weighted based on cropland acreage]"
+130,"h","","","",""
+130,"h","","Week ending","Week ending","Week ending"
+130,"h","","","",""
+130,"h","State","July 15,","July 8,","July 15,"
+130,"h","","2017","2018","2018"
+130,"h","","","",""
+130,"u","","(Days)","(Days)","(Days)"
+130,"d","Alabama",5.1,5.1,5.4
+130,"d","Arizona",7.0,7.0,6.5
+130,"d","Arkansas",5.9,6.6,6.8
+130,"d","California",7.0,7.0,7.0
+130,"d","Colorado",6.4,6.5,6.6
+130,"d","Connecticut",5.0,6.0,7.0
+130,"d","Delaware",6.0,7.0,7.0
+130,"d","Florida",6.1,6.0,6.6
+130,"d","Georgia",5.6,5.3,6.1
+130,"d","Idaho",6.9,6.8,6.9
+130,"d","Illinois",5.4,5.0,5.6
+130,"d","Indiana",3.5,5.6,6.4
+130,"d","Iowa",5.8,4.8,5.3
+130,"d","Kansas",5.9,5.9,6.3
+130,"d","Kentucky",6.0,5.5,6.4
+130,"d","Louisiana",3.9,5.1,5.0
+130,"d","Maine",5.7,6.0,6.1
+130,"d","Maryland",6.5,6.5,7.0
+130,"d","Massachusetts",5.5,6.0,6.8
+130,"d","Michigan",4.5,6.5,6.6
+130,"d","Minnesota",5.6,3.7,4.7
+130,"d","Mississippi",5.7,5.5,5.9
+130,"d","Missouri",5.5,6.5,6.6
+130,"d","Montana",6.7,6.6,6.6
+130,"d","Nebraska",6.2,5.2,5.8
+130,"d","Nevada",7.0,5.6,4.9
+130,"d","New Hampshire",5.1,6.3,6.5
+130,"d","New Jersey",6.0,6.5,6.5
+130,"d","New Mexico",6.7,6.7,6.6
+130,"d","New York",3.0,6.5,7.0
+130,"d","North Carolina",6.5,5.8,6.5
+130,"d","North Dakota",6.6,5.4,6.3
+130,"d","Ohio",1.9,5.1,6.6
+130,"d","Oklahoma",6.4,6.5,6.8
+130,"d","Oregon",6.8,6.7,6.9
+130,"d","Pennsylvania",5.0,5.5,6.5
+130,"d","Rhode Island",4.0,6.5,7.0
+130,"d","South Carolina",5.8,6.4,6.4
+130,"d","South Dakota",6.8,5.2,5.5
+130,"d","Tennessee",5.5,4.8,5.6
+130,"d","Texas",6.6,6.2,6.2
+130,"d","Utah",6.9,7.0,6.9
+130,"d","Vermont",4.8,6.4,5.6
+130,"d","Virginia",6.7,6.4,6.7
+130,"d","Washington",7.0,6.8,6.9
+130,"d","West Virginia",5.3,5.9,6.2
+130,"d","Wisconsin",4.4,5.6,5.6
+130,"d","Wyoming",7.0,6.6,6.2
+130,"c",""
+128,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+128,"t","Topsoil Moisture Condition - Selected States: Week Ending July 15, 2018"
+128,"t","[National topsoil moisture conditions for selected States are weighted based on cropland acreage]"
+128,"h","","","","",""
+128,"h","State","Very short","Short","Adequate","Surplus"
+128,"h","","","","",""
+128,"u","","(percent)","(percent)","(percent)","(percent)"
+128,"d","Alabama",2,10,76,12
+128,"d","Arizona",3,7,86,4
+128,"d","Arkansas",29,44,26,1
+128,"d","California",55,25,20,-
+128,"d","Colorado",27,28,44,1
+128,"d","Connecticut",-,10,90,-
+128,"d","Delaware",84,12,4,-
+128,"d","Florida",7,11,73,9
+128,"d","Georgia",3,25,67,5
+128,"d","Idaho",14,26,51,9
+128,"d","Illinois",7,15,75,3
+128,"d","Indiana",10,33,55,2
+128,"d","Iowa",3,11,76,10
+128,"d","Kansas",12,32,54,2
+128,"d","Kentucky",3,32,60,5
+128,"d","Louisiana",7,28,55,10
+128,"d","Maine",20,61,19,-
+128,"d","Maryland",47,20,28,5
+128,"d","Massachusetts",1,30,69,-
+128,"d","Michigan",33,45,22,-
+128,"d","Minnesota",1,3,72,24
+128,"d","Mississippi",8,42,47,3
+128,"d","Missouri",40,37,22,1
+128,"d","Montana",4,30,60,6
+128,"d","Nebraska",3,18,74,5
+128,"d","Nevada",25,45,30,-
+128,"d","New Hampshire",50,36,14,-
+128,"d","New Jersey",7,38,52,3
+128,"d","New Mexico",47,30,22,1
+128,"d","New York",37,34,26,3
+128,"d","North Carolina",16,37,46,1
+128,"d","North Dakota",1,12,82,5
+128,"d","Ohio",2,32,61,5
+128,"d","Oklahoma",19,31,49,1
+128,"d","Oregon",25,47,28,-
+128,"d","Pennsylvania",11,27,61,1
+128,"d","Rhode Island",17,60,23,-
+128,"d","South Carolina",4,42,54,-
+128,"d","South Dakota",3,19,71,7
+128,"d","Tennessee",2,12,77,9
+128,"d","Texas",29,35,33,3
+128,"d","Utah",22,40,38,-
+128,"d","Vermont",16,65,19,-
+128,"d","Virginia",11,45,43,1
+128,"d","Washington",4,41,55,-
+128,"d","West Virginia",1,30,63,6
+128,"d","Wisconsin",2,20,74,4
+128,"d","Wyoming",12,26,62,-
+128,"d","",,,,
+128,"d","48 States",13,25,57,5
+128,"d","",,,,
+128,"d","Previous week",10,20,62,8
+128,"d","Previous year",14,26,53,7
+128,"c",""
+128,"f","-  Represents zero."
+129,"t","Crop Progress: Released July 16, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+129,"t","Subsoil Moisture Condition - Selected States: Week Ending July 15, 2018"
+129,"t","[National subsoil moisture conditions for selected States are weighted based on cropland acreage]"
+129,"h","","","","",""
+129,"h","State","Very short","Short","Adequate","Surplus"
+129,"h","","","","",""
+129,"u","","(percent)","(percent)","(percent)","(percent)"
+129,"d","Alabama",1,11,80,8
+129,"d","Arizona",3,6,87,4
+129,"d","Arkansas",22,49,29,-
+129,"d","California",50,25,25,-
+129,"d","Colorado",22,29,48,1
+129,"d","Connecticut",-,10,90,-
+129,"d","Delaware",72,21,7,-
+129,"d","Florida",-,9,85,6
+129,"d","Georgia",2,18,75,5
+129,"d","Idaho",17,21,53,9
+129,"d","Illinois",6,18,72,4
+129,"d","Indiana",6,29,63,2
+129,"d","Iowa",4,12,72,12
+129,"d","Kansas",11,35,53,1
+129,"d","Kentucky",2,24,70,4
+129,"d","Louisiana",4,29,59,8
+129,"d","Maine",10,54,36,-
+129,"d","Maryland",44,20,31,5
+129,"d","Massachusetts",-,16,84,-
+129,"d","Michigan",25,37,37,1
+129,"d","Minnesota",-,4,68,28
+129,"d","Mississippi",9,37,51,3
+129,"d","Missouri",36,38,25,1
+129,"d","Montana",5,34,55,6
+129,"d","Nebraska",4,19,75,2
+129,"d","Nevada",20,40,40,-
+129,"d","New Hampshire",42,38,20,-
+129,"d","New Jersey",-,24,74,2
+129,"d","New Mexico",36,45,19,-
+129,"d","New York",29,37,34,-
+129,"d","North Carolina",8,24,67,1
+129,"d","North Dakota",1,16,79,4
+129,"d","Ohio",1,22,70,7
+129,"d","Oklahoma",22,38,39,1
+129,"d","Oregon",14,55,31,-
+129,"d","Pennsylvania",1,20,79,-
+129,"d","Rhode Island",20,35,45,-
+129,"d","South Carolina",4,34,62,-
+129,"d","South Dakota",5,21,69,5
+129,"d","Tennessee",2,13,79,6
+129,"d","Texas",30,42,26,2
+129,"d","Utah",24,38,38,-
+129,"d","Vermont",-,70,30,-
+129,"d","Virginia",5,30,65,-
+129,"d","Washington",3,34,62,1
+129,"d","West Virginia",-,28,69,3
+129,"d","Wisconsin",1,21,75,3
+129,"d","Wyoming",12,23,65,-
+129,"d","",,,,
+129,"d","48 States",11,26,58,5
+129,"d","",,,,
+129,"d","Previous week",10,22,62,6
+129,"d","Previous year",11,25,58,6
+129,"c",""
+129,"f","-  Represents zero."

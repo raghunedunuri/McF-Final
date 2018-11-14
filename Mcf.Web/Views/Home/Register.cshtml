@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+@model McF.Models.RegisterViewModel
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/bootstrap")
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    @using (Html.BeginForm("Register", "Home", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div style="padding-top:100px">
+            <div>
+                @if (TempData["ErrorMSG"] != null)
+                {   
+                    <div class="alert alert-danger">
+                        <strong>@TempData["ErrorMSG"]</strong>
+                    </div>
+                    <br /><br />
+                }
+            </div>
+            <div class="module form-module">
+                <div class="toggle">
+                </div>
+                <div class="form">
+                    <h2>Create an account</h2>
+                    <form>
+                        @Html.TextBoxFor(s => s.Email, new { @placeholder = "Email" })                        
+                        @Html.PasswordFor(s => s.Password, new { @placeholder = "Password" })
+                        @Html.TextBoxFor(s => s.Name, new { @placeholder = "Name" })
+                        <button command="register">Register</button>
+                        <br /><br />
+                        Already a user? @Html.ActionLink("Login Here", "Login", "Home")
+                    </form>
+                </div>
+                @*<div class="cta"><a href="#">Forgot your password?</a></div>*@
+            </div>
+        </div>
+    }
+</body>
+</html>

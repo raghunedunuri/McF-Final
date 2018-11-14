@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "HFCSDemand";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="d-relative">
+    <div class="EmbeddedCode">
+        <div class="Embedded-tooltip">
+            <button onclick="myFunction()" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                <img src="~/img/chart-icon/embed.png" class="img-responsive" alt="EmbeddedCode" />
+            </button>
+        </div>
+        <div class="embeddedUrl">
+            <input type="text" value='@Html.Raw(ViewBag.embeddedText).ToHtmlString()' id="embeddedLbl">
+        </div>
+    </div>
+    <div class="iframe-responsive">
+        <iframe src="@Url.Action("HFCSDemand", "CommonReport")" style="height:550px;width:100%;border:0px;"></iframe>
+    </div>
+    @*<div class="clearfix chart-bottom">
+        <div class="pull-right">DataSource: USDA</div>        
+    </div>*@
+
+    <script>
+        function myFunction() {
+            
+            var copyText = document.getElementById("embeddedLbl");
+            copyText.select();
+            console.log(copyText);
+            document.execCommand("copy");
+            
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copied";
+        }
+
+        function outFunc() {
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copy to clipboard";
+        }
+    </script>
+</div>

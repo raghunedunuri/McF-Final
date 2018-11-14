@@ -1,0 +1,585 @@
+1,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+1,"t","Hogs and Pigs Inventory by Class, Weight Group, and Quarter – United States: 2017 and 2018"
+1,"t","[May not add due to rounding. Blank data cells indicate estimation period has not yet begun]"
+1,"h","","","",""
+1,"h","","","","2018 as"
+1,"h","Item","2017","2018","percent"
+1,"h","","","","of 2017"
+1,"h","","","",""
+1,"u","","(1,000 head)","(1,000 head)","(percent)"
+1,"d","March 1 inventory",,,
+1,"d","  All hogs and pigs",70701,72938,103
+1,"d","    Kept for breeding",6098,6210,102
+1,"d","    Market",64603,66728,103
+1,"d","",,,
+1,"d","  Market hogs and pigs by weight groups",,,
+1,"d","    Under 50 pounds",20407,21047,103
+1,"d","    50-119 pounds",17862,18422,103
+1,"d","    120-179 pounds",14435,14941,104
+1,"d","    180 pounds and over",11899,12317,104
+1,"d","",,,
+1,"d","June 1 inventory",,,
+1,"d","  All hogs and pigs",71010,73451,103
+1,"d","    Kept for breeding",6109,6320,103
+1,"d","    Market",64901,67131,103
+1,"d","",,,
+1,"d","  Market hogs and pigs by weight groups",,,
+1,"d","    Under 50 pounds",20647,21387,104
+1,"d","    50-119 pounds",18741,19388,103
+1,"d","    120-179 pounds",13646,14198,104
+1,"d","    180 pounds and over",11867,12157,102
+1,"d","",,,
+1,"d","September 1 inventory",,,
+1,"d","  All hogs and pigs",73559,,
+1,"d","    Kept for breeding",6117,,
+1,"d","    Market",67442,,
+1,"d","",,,
+1,"d","  Market hogs and pigs by weight groups",,,
+1,"d","    Under 50 pounds",21673,,
+1,"d","    50-119 pounds",19781,,
+1,"d","    120-179 pounds",13919,,
+1,"d","    180 pounds and over",12069,,
+1,"d","",,,
+1,"d","December 1 inventory",,,
+1,"d","  All hogs and pigs",73695,,
+1,"d","    Kept for breeding",6179,,
+1,"d","    Market",67516,,
+1,"d","",,,
+1,"d","  Market hogs and pigs by weight groups",,,
+1,"d","    Under 50 pounds",21582,,
+1,"d","    50-119 pounds",18694,,
+1,"d","    120-179 pounds",14030,,
+1,"d","    180 pounds and over",13209
+1,"c",""
+33,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+33,"t","Sows Farrowing, Pig Crop, and Pigs per Litter – United States: 2016-2018"
+33,"t","[December preceding year. Blank data cells indicate estimation period has not yet begun]"
+33,"h","","","","","",""
+33,"h","","","","","2018 as percent of","2018 as percent of"
+33,"h","Item","2016","2017","2018","",""
+33,"h","","","","","2016","2017"
+33,"h","","","","","",""
+33,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(percent)","(percent)"
+33,"d","Sows farrowing",,,,,
+33,"d","  December-February",2927,2986,3057,104,102
+33,"d","  March-May",2968,3014,3121,105,104
+33,"d","  December-May 1/",5896,5999,6178,105,103
+33,"d","",,,,,
+33,"d","  June-August 2/",3057,3121,3170,104,102
+33,"d","  September-November 2/",3046,3130,3180,104,102
+33,"d","  June-November 1/ 2/",6103,6251,6350,104,102
+33,"d","",,,,,
+33,"d","Pig crop",,,,,
+33,"d","  December-February",30139,31146,32341,107,104
+33,"d","  March-May",31097,31790,33167,107,104
+33,"d","  December-May 1/",61236,62935,65508,107,104
+33,"d","",,,,,
+33,"d","  June-August",32331,33244,,,
+33,"d","  September-November",32372,33624,,,
+33,"d","  June-November 1/",64703,66867,,,
+33,"d",""
+33,"u","","(number)","(number)","(number)","(percent)","(percent)"
+33,"d","Pigs per litter",,,,,
+33,"d","  December-February",10.30,10.43,10.58,103,101
+33,"d","  March-May",10.48,10.55,10.63,101,101
+33,"d","  December-May",10.39,10.49,10.60,102,101
+33,"d","",,,,,
+33,"d","  June-August",10.58,10.65,,,
+33,"d","  September-November",10.63,10.74,,,
+33,"d","  June-November",10.60,10.70
+33,"c",""
+33,"f","1/ May not add due to rounding"
+33,"f","2/ Intentions for 2018."
+18,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+18,"t","Monthly Sows Farrowing, Pigs per Litter, and Pig Crop – United States: December-November 2017 and 2018"
+18,"t","[December preceding year. Blank data cells indicate estimation period has not yet begun]"
+18,"h","","","","","","",""
+18,"h","","Sows farrowing 1/","Sows farrowing 1/","Pigs per litter","Pigs per litter","Pig crop 1/","Pig crop 1/"
+18,"h","Month","","","","","",""
+18,"h","","2017","2018","2017","2018","2017","2018"
+18,"h","","","","","","",""
+18,"u","","(1,000 head)","(1,000 head)","(number)","(number)","(1,000 head)","(1,000 head)"
+18,"d","December",1006,1034,10.44,10.62,10500,10976
+18,"d","January",992,1024,10.39,10.49,10309,10743
+18,"d","February",988,999,10.46,10.63,10337,10622
+18,"d","March",1036,1072,10.54,10.56,10916,11320
+18,"d","April",975,1017,10.56,10.55,10298,10733
+18,"d","May",1003,1032,10.55,10.77,10576,11113
+18,"d","June",1065,,10.56,,11244,
+18,"d","July",1025,,10.65,,10916,
+18,"d","August",1032,,10.74,,11085,
+18,"d","September",1074,,10.66,,11441,
+18,"d","October",1035,,10.78,,11148,
+18,"d","November",1022,,10.80,,11034,
+18,"d","",,,,,,
+18,"d","Total",12250,"",10.60,"",129803
+18,"c",""
+18,"f","1/ Monthly values may not add to quarterly or annual totals due to rounding."
+5,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+5,"t","Breeding, Market, and Total Inventory – States and United States: March 1, 2017 and 2018"
+5,"t","[May not add due to rounding]"
+5,"h","","","","","","","","","",""
+5,"h","","Breeding","Breeding","Breeding","Market","Market","Market","Total","Total","Total"
+5,"h","","","","","","","","","",""
+5,"h","State","","","2018 as","","","2018 as","","","2018 as"
+5,"h","","2017","2018","percent","2017","2018","percent","2017","2018","percent"
+5,"h","","","","of 2017","","","of 2017","","","of 2017"
+5,"h","","","","","","","","","",""
+5,"u","","(1,000 head)","(1,000 head)","(percent)","(1,000 head)","(1,000 head)","(percent)","(1,000 head)","(1,000 head)","(percent)"
+5,"d","Colorado",155,155,100,545,615,113,700,770,110
+5,"d","Illinois",540,550,102,4710,4750,101,5250,5300,101
+5,"d","Indiana",280,260,93,3770,3790,101,4050,4050,100
+5,"d","Iowa",1000,1020,102,20600,21580,105,21600,22600,105
+5,"d","Kansas",165,160,97,1805,1890,105,1970,2050,104
+5,"d","Michigan",110,120,109,1000,1080,108,1110,1200,108
+5,"d","Minnesota",560,570,102,7840,7930,101,8400,8500,101
+5,"d","Missouri",445,455,102,2655,2995,113,3100,3450,111
+5,"d","Nebraska",415,420,101,2885,3030,105,3300,3450,105
+5,"d","North Carolina",880,900,102,8320,8000,96,9200,8900,97
+5,"d","",,,,,,,,,
+5,"d","Ohio",185,190,103,2465,2710,110,2650,2900,109
+5,"d","Oklahoma",445,445,100,1655,1725,104,2100,2170,103
+5,"d","Pennsylvania",100,110,110,1040,1090,105,1140,1200,105
+5,"d","South Dakota",200,235,118,1250,1425,114,1450,1660,114
+5,"d","Texas",120,145,121,790,955,121,910,1100,121
+5,"d","Utah",80,75,94,620,420,68,700,495,71
+5,"d","",,,,,,,,,
+5,"d","Other States 1/",418,400,96,2653,2743,103,3071,3143,102
+5,"d","",,,,,,,,,
+5,"d","United States",6098,6210,102,64603,66728,103,70701,72938,103
+5,"c",""
+5,"f","1/ Individual State estimates not available for the 34 Other States."
+6,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+6,"t","Market Inventory by Weight Group – States and United States: March 1, 2017 and 2018"
+6,"t","[Weight groups may not add to market inventory due to rounding]"
+6,"h","","","","","","","","",""
+6,"h","","Under","Under","50-119","50-119","120-179","120-179","180 pounds","180 pounds"
+6,"h","","50 pounds","50 pounds","pounds","pounds","pounds","pounds","and over","and over"
+6,"h","State","","","","","","","",""
+6,"h","","2017","2018","2017","2018","2017","2018","2017","2018"
+6,"h","","","","","","","","",""
+6,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)"
+6,"d","Colorado",250,285,110,120,95,105,90,105
+6,"d","Illinois",1530,1465,1460,1465,920,980,800,840
+6,"d","Indiana",1030,955,1050,1150,810,860,880,825
+6,"d","Iowa",5300,5590,6440,6720,5270,5360,3590,3910
+6,"d","Kansas",455,405,475,540,345,410,530,535
+6,"d","Michigan",285,320,245,265,240,245,230,250
+6,"d","Minnesota",2590,2620,2380,2400,1650,1760,1220,1150
+6,"d","Missouri",1350,1455,515,560,400,530,390,450
+6,"d","Nebraska",920,1040,735,775,650,670,580,545
+6,"d","North Carolina",3140,3250,1860,1720,1800,1690,1520,1340
+6,"d","",,,,,,,,
+6,"d","Ohio",690,700,730,730,625,700,420,580
+6,"d","Oklahoma",740,735,300,335,270,260,345,395
+6,"d","Pennsylvania",265,285,305,310,280,270,190,225
+6,"d","South Dakota",455,510,325,370,240,280,230,265
+6,"d","Texas",170,270,220,260,175,185,225,240
+6,"d","Utah",265,155,115,80,130,95,110,90
+6,"d","",,,,,,,,
+6,"d","Other States 1/",972,1007,597,622,535,541,549,572
+6,"d","",,,,,,,,
+6,"d","United States",20407,21047,17862,18422,14435,14941,11899,12317
+6,"c",""
+6,"f","1/ Individual State estimates not available for the 34 Other States."
+7,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+7,"t","Breeding, Market, and Total Inventory – States and United States: June 1, 2017 and 2018"
+7,"t","[May not add due to rounding]"
+7,"h","","","","","","","","","",""
+7,"h","","Breeding","Breeding","Breeding","Market","Market","Market","Total","Total","Total"
+7,"h","","","","","","","","","",""
+7,"h","State","","","2018 as","","","2018 as","","","2018 as"
+7,"h","","2017","2018","percent","2017","2018","percent","2017","2018","percent"
+7,"h","","","","of 2017","","","of 2017","","","of 2017"
+7,"h","","","","","","","","","",""
+7,"u","","(1,000 head)","(1,000 head)","(percent)","(1,000 head)","(1,000 head)","(percent)","(1,000 head)","(1,000 head)","(percent)"
+7,"d","Colorado",155,155,100,565,605,107,720,760,106
+7,"d","Illinois",530,570,108,4720,4780,101,5250,5350,102
+7,"d","Indiana",260,250,96,3690,3750,102,3950,4000,101
+7,"d","Iowa",1030,1040,101,20870,21660,104,21900,22700,104
+7,"d","Kansas",160,165,103,1790,1875,105,1950,2040,105
+7,"d","Michigan",110,120,109,1000,1080,108,1110,1200,108
+7,"d","Minnesota",570,580,102,7930,8020,101,8500,8600,101
+7,"d","Missouri",440,460,105,2810,3040,108,3250,3500,108
+7,"d","Nebraska",420,430,102,2980,3120,105,3400,3550,104
+7,"d","North Carolina",880,910,103,8020,7990,100,8900,8900,100
+7,"d","",,,,,,,,,
+7,"d","Ohio",190,190,100,2510,2710,108,2700,2900,107
+7,"d","Oklahoma",450,460,102,1570,1700,108,2020,2160,107
+7,"d","Pennsylvania",105,120,114,1085,1190,110,1190,1310,110
+7,"d","South Dakota",200,240,120,1290,1440,112,1490,1680,113
+7,"d","Texas",125,145,116,785,995,127,910,1140,125
+7,"d","Utah",75,80,107,605,450,74,680,530,78
+7,"d","",,,,,,,,,
+7,"d","Other States 1/",409,405,99,2681,2726,102,3090,3131,101
+7,"d","",,,,,,,,,
+7,"d","United States",6109,6320,103,64901,67131,103,71010,73451,103
+7,"c",""
+7,"f","1/ Individual State estimates not available for the 34 Other States."
+8,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+8,"t","Market Inventory by Weight Group – States and United States: June 1, 2017 and 2018"
+8,"t","[Weight groups may not add to market inventory due to rounding]"
+8,"h","","","","","","","","",""
+8,"h","","Under","Under","50-119","50-119","120-179","120-179","180 pounds","180 pounds"
+8,"h","","50 pounds","50 pounds","pounds","pounds","pounds","pounds","and over","and over"
+8,"h","State","","","","","","","",""
+8,"h","","2017","2018","2017","2018","2017","2018","2017","2018"
+8,"h","","","","","","","","",""
+8,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)"
+8,"d","Colorado",255,290,120,120,100,95,90,100
+8,"d","Illinois",1430,1550,1530,1510,930,880,830,840
+8,"d","Indiana",920,940,1140,1150,770,830,860,830
+8,"d","Iowa",5450,5590,6870,7150,4950,5220,3600,3700
+8,"d","Kansas",480,420,490,520,355,375,465,560
+8,"d","Michigan",290,310,240,290,245,220,225,260
+8,"d","Minnesota",2610,2610,2390,2490,1640,1780,1290,1140
+8,"d","Missouri",1360,1505,580,590,435,475,435,470
+8,"d","Nebraska",1005,1050,785,840,615,650,575,580
+8,"d","North Carolina",3290,3370,1870,1840,1400,1450,1460,1330
+8,"d","",,,,,,,,
+8,"d","Ohio",720,690,720,750,630,680,440,590
+8,"d","Oklahoma",685,785,340,400,230,225,315,290
+8,"d","Pennsylvania",285,320,345,355,280,255,175,260
+8,"d","South Dakota",455,510,345,380,240,270,250,280
+8,"d","Texas",165,300,235,275,175,165,210,255
+8,"d","Utah",245,175,120,90,130,90,110,95
+8,"d","",,,,,,,,
+8,"d","Other States 1/",1002,972,621,638,521,538,537,577
+8,"d","",,,,,,,,
+8,"d","United States",20647,21387,18741,19388,13646,14198,11867,12157
+8,"c",""
+8,"f","1/ Individual State estimates not available for the 34 Other States."
+9,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+9,"t","Breeding, Market, and Total Inventory – States and United States: September 1, 2016 and 2017"
+9,"t","[May not add due to rounding]"
+9,"h","","","","","","","","","",""
+9,"h","","Breeding","Breeding","Breeding","Market","Market","Market","Total","Total","Total"
+9,"h","","","","","","","","","",""
+9,"h","State","","","2017 as","","","2017 as","","","2017 as"
+9,"h","","2016","2017","percent","2016","2017","percent","2016","2017","percent"
+9,"h","","","","of 2016","","","of 2016","","","of 2016"
+9,"h","","","","","","","","","",""
+9,"u","","(1,000 head)","(1,000 head)","(percent)","(1,000 head)","(1,000 head)","(percent)","(1,000 head)","(1,000 head)","(percent)"
+9,"d","Colorado",145,160,110,575,600,104,720,760,106
+9,"d","Illinois",530,540,102,4470,4860,109,5000,5400,108
+9,"d","Indiana",280,260,93,3720,3840,103,4000,4100,103
+9,"d","Iowa",980,980,100,21320,21720,102,22300,22700,102
+9,"d","Kansas",180,165,92,1830,1835,100,2010,2000,100
+9,"d","Michigan",105,120,114,1035,1070,103,1140,1190,104
+9,"d","Minnesota",570,550,96,7830,7850,100,8400,8400,100
+9,"d","Missouri",395,440,111,2805,3060,109,3200,3500,109
+9,"d","Nebraska",420,410,98,3180,3040,96,3600,3450,96
+9,"d","North Carolina",890,900,101,8410,8400,100,9300,9300,100
+9,"d","",,,,,,,,,
+9,"d","Ohio",190,180,95,2410,2670,111,2600,2850,110
+9,"d","Oklahoma",455,455,100,1785,1785,100,2240,2240,100
+9,"d","Pennsylvania",95,110,116,1055,1110,105,1150,1220,106
+9,"d","South Dakota",195,215,110,1215,1325,109,1410,1540,109
+9,"d","Texas",100,135,135,830,895,108,930,1030,111
+9,"d","Utah",75,80,107,625,600,96,700,680,97
+9,"d","",,,,,,,,,
+9,"d","Other States 1/",411,417,101,2675,2782,104,3086,3199,104
+9,"d","",,,,,,,,,
+9,"d","United States",6016,6117,102,65770,67442,103,71786,73559,102
+9,"c",""
+9,"f","1/ Individual State estimates not available for the 34 Other States."
+10,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+10,"t","Market Inventory by Weight Group – States and United States: September 1, 2016 and 2017"
+10,"t","[Weight groups may not add to market inventory due to rounding]"
+10,"h","","","","","","","","",""
+10,"h","","Under","Under","50-119","50-119","120-179","120-179","180 pounds","180 pounds"
+10,"h","","50 pounds","50 pounds","pounds","pounds","pounds","pounds","and over","and over"
+10,"h","State","","","","","","","",""
+10,"h","","2016","2017","2016","2017","2016","2017","2016","2017"
+10,"h","","","","","","","","",""
+10,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)"
+10,"d","Colorado",270,275,125,125,85,105,95,95
+10,"d","Illinois",1440,1505,1380,1620,870,930,780,805
+10,"d","Indiana",1050,1050,1130,1180,720,780,820,830
+10,"d","Iowa",5690,5710,6930,7220,5080,5080,3620,3710
+10,"d","Kansas",500,475,515,505,365,355,450,500
+10,"d","Michigan",295,310,270,260,235,250,235,250
+10,"d","Minnesota",2650,2700,2480,2510,1500,1510,1200,1130
+10,"d","Missouri",1375,1485,600,640,400,460,430,475
+10,"d","Nebraska",990,1015,950,835,640,600,600,590
+10,"d","North Carolina",3260,3400,2080,1950,1600,1550,1470,1500
+10,"d","",,,,,,,,
+10,"d","Ohio",740,730,730,785,550,640,390,515
+10,"d","Oklahoma",775,770,440,440,250,275,320,300
+10,"d","Pennsylvania",270,305,345,335,250,280,190,190
+10,"d","South Dakota",435,450,325,365,230,260,225,250
+10,"d","Texas",240,235,240,255,160,160,190,245
+10,"d","Utah",250,235,130,125,130,130,115,110
+10,"d","",,,,,,,,
+10,"d","Other States 1/",985,1023,601,631,535,554,553,574
+10,"d","",,,,,,,,
+10,"d","United States",21215,21673,19271,19781,13600,13919,11683,12069
+10,"c",""
+10,"f","1/ Individual State estimates not available for the 34 Other States."
+11,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+11,"t","Breeding, Market, and Total Inventory – States and United States: December 1, 2016 and 2017"
+11,"t","[May not add due to rounding]"
+11,"h","","","","","","","","","",""
+11,"h","","Breeding","Breeding","Breeding","Market","Market","Market","Total","Total","Total"
+11,"h","","","","","","","","","",""
+11,"h","State","","","2017 as","","","2017 as","","","2017 as"
+11,"h","","2016","2017","percent","2016","2017","percent","2016","2017","percent"
+11,"h","","","","of 2016","","","of 2016","","","of 2016"
+11,"h","","","","","","","","","",""
+11,"u","","(1,000 head)","(1,000 head)","(percent)","(1,000 head)","(1,000 head)","(percent)","(1,000 head)","(1,000 head)","(percent)"
+11,"d","Colorado",150,150,100,520,600,115,670,750,112
+11,"d","Illinois",540,530,98,4560,4870,107,5100,5400,106
+11,"d","Indiana",270,260,96,3830,3790,99,4100,4050,99
+11,"d","Iowa",1030,1000,97,21170,21900,103,22200,22900,103
+11,"d","Kansas",165,165,100,1745,1945,111,1910,2110,110
+11,"d","Michigan",110,120,109,1020,1070,105,1130,1190,105
+11,"d","Minnesota",570,570,100,7930,8030,101,8500,8600,101
+11,"d","Missouri",435,450,103,2665,2950,111,3100,3400,110
+11,"d","Nebraska",415,430,104,2985,3170,106,3400,3600,106
+11,"d","North Carolina",880,900,102,8420,8100,96,9300,9000,97
+11,"d","",,,,,,,,,
+11,"d","Ohio",200,190,95,2500,2760,110,2700,2950,109
+11,"d","Oklahoma",450,460,102,1710,1780,104,2160,2240,104
+11,"d","Pennsylvania",100,110,110,1110,1140,103,1210,1250,103
+11,"d","South Dakota",190,215,113,1260,1345,107,1450,1560,108
+11,"d","Texas",110,140,127,770,910,118,880,1050,119
+11,"d","Utah",75,80,107,625,470,75,700,550,79
+11,"d","",,,,,,,,,
+11,"d","Other States 1/",420,409,97,2615,2686,103,3035,3095,102
+11,"d","",,,,,,,,,
+11,"d","United States",6110,6179,101,65435,67516,103,71545,73695,103
+11,"c",""
+11,"f","1/ Individual State estimates not available for the 34 Other States."
+12,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+12,"t","Market Inventory by Weight Group – States and United States: December 1, 2016 and 2017"
+12,"t","[Weight groups may not add to market inventory due to rounding]"
+12,"h","","","","","","","","",""
+12,"h","","Under","Under","50-119","50-119","120-179","120-179","180 pounds","180 pounds"
+12,"h","","50 pounds","50 pounds","pounds","pounds","pounds","pounds","and over","and over"
+12,"h","State","","","","","","","",""
+12,"h","","2016","2017","2016","2017","2016","2017","2016","2017"
+12,"h","","","","","","","","",""
+12,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)"
+12,"d","Colorado",220,255,120,130,95,115,85,100
+12,"d","Illinois",1450,1550,1360,1480,890,920,860,920
+12,"d","Indiana",1040,1000,1090,1060,790,780,910,950
+12,"d","Iowa",5620,5880,6550,6870,5010,5080,3990,4070
+12,"d","Kansas",455,480,520,520,320,420,450,525
+12,"d","Michigan",300,330,265,240,215,245,240,255
+12,"d","Minnesota",2720,2770,2350,2380,1560,1600,1300,1280
+12,"d","Missouri",1340,1450,520,560,375,445,430,495
+12,"d","Nebraska",955,1030,790,840,650,640,590,660
+12,"d","North Carolina",3160,3190,1950,1790,1680,1570,1630,1550
+12,"d","",,,,,,,,
+12,"d","Ohio",750,760,660,760,600,660,490,580
+12,"d","Oklahoma",735,735,360,430,275,230,340,385
+12,"d","Pennsylvania",320,305,335,335,245,260,210,240
+12,"d","South Dakota",445,460,325,365,245,270,245,250
+12,"d","Texas",170,240,190,240,175,175,235,255
+12,"d","Utah",250,185,120,85,130,100,125,100
+12,"d","",,,,,,,,
+12,"d","Other States 1/",957,962,597,609,531,520,530,594
+12,"d","",,,,,,,,
+12,"d","United States",20887,21582,18102,18694,13786,14030,12660,13209
+12,"c",""
+12,"f","1/ Individual State estimates not available for the 34 Other States."
+22,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+22,"t","Sows Farrowing, Pigs per Litter, and Pig Crop – States and United States:"
+22,"t","December-February 2017 and 2018"
+22,"t","[December preceding year. May not add due to rounding]"
+22,"h","","","","","","","","",""
+22,"h","","Sows farrowing","Sows farrowing","Sows farrowing","Pigs per litter","Pigs per litter","Pig crop 1/","Pig crop 1/","Pig crop 1/"
+22,"h","","","","","","","","",""
+22,"h","State","","","2018 as","","","","","2018 as"
+22,"h","","2017","2018","percent","2017","2018","2017","2018","percent"
+22,"h","","","","of 2017","","","","","of 2017"
+22,"h","","","","","","","","",""
+22,"u","","(1,000 head)","(1,000 head)","(percent)","(number)","(number)","(1,000 head)","(1,000 head)","(percent)"
+22,"d","Colorado",76,72,95,9.90,9.70,752,698,93
+22,"d","Illinois",265,260,98,10.20,10.60,2703,2756,102
+22,"d","Indiana",145,130,90,10.25,10.45,1486,1359,91
+22,"d","Iowa",510,560,110,10.75,11.00,5483,6160,112
+22,"d","Kansas",79,79,100,10.00,10.20,790,806,102
+22,"d","Michigan",50,53,106,10.40,10.70,520,567,109
+22,"d","Minnesota",275,300,109,11.35,11.20,3121,3360,108
+22,"d","Missouri",220,225,102,10.05,10.15,2211,2284,103
+22,"d","Nebraska",175,180,103,11.55,11.70,2021,2106,104
+22,"d","North Carolina",460,455,99,9.90,9.90,4554,4505,99
+22,"d","",,,,,,,,
+22,"d","Ohio",91,91,100,10.80,10.80,983,983,100
+22,"d","Oklahoma",200,200,100,10.30,10.60,2060,2120,103
+22,"d","Pennsylvania",46,49,107,10.30,10.60,474,519,109
+22,"d","South Dakota",102,111,109,11.30,11.45,1153,1271,110
+22,"d","Texas",50,58,116,9.90,9.90,495,574,116
+22,"d","Utah",39,36,92,8.70,7.70,339,277,82
+22,"d","",,,,,,,,
+22,"d","Other States 2/",203,198,97,9.86,10.09,2001,1996,100
+22,"d","",,,,,,,,
+22,"d","United States",2986,3057,102,10.43,10.58,31146,32341,104
+22,"c",""
+22,"f","1/ Number of pigs born December-February that were still on hand March 1, or had been sold."
+22,"f","2/ Individual State estimates not available for the 34 Other States."
+14,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+14,"t","Sows Farrowing, Pigs per Litter, and Pig Crop – States and United States: March-May 2017 and 2018"
+14,"t","[May not add due to rounding]"
+14,"h","","","","","","","","",""
+14,"h","","Sows farrowing","Sows farrowing","Sows farrowing","Pigs per litter","Pigs per litter","Pig crop 1/","Pig crop 1/","Pig crop 1/"
+14,"h","","","","","","","","",""
+14,"h","","","2018","2018 as","","","","2018","2018 as"
+14,"h","State","","","","","","","",""
+14,"h","","2017","","percent","","","2017","","percent"
+14,"h","","","","of 2017","2017","2018","","","of 2017"
+14,"h","","","","","","","","",""
+14,"u","","(1,000 head)","(1,000 head)","(percent)","(number)","(number)","(1,000 head)","(1,000 head)","(percent)"
+14,"d","Colorado",77,75,97,10.40,9.60,801,720,90
+14,"d","Illinois",255,275,108,10.55,10.70,2690,2943,109
+14,"d","Indiana",135,115,85,10.50,10.30,1418,1185,84
+14,"d","Iowa",510,570,112,10.95,11.10,5585,6327,113
+14,"d","Kansas",80,76,95,10.00,10.10,800,768,96
+14,"d","Michigan",50,53,106,10.50,10.90,525,578,110
+14,"d","Minnesota",300,310,103,11.40,11.20,3420,3472,102
+14,"d","Missouri",220,240,109,10.25,10.20,2255,2448,109
+14,"d","Nebraska",185,190,103,11.45,11.30,2118,2147,101
+14,"d","North Carolina",470,465,99,10.00,10.10,4700,4697,100
+14,"d","",,,,,,,,
+14,"d","Ohio",97,88,91,10.60,11.00,1028,968,94
+14,"d","Oklahoma",195,205,105,10.60,10.70,2067,2194,106
+14,"d","Pennsylvania",50,51,102,10.50,10.50,525,536,102
+14,"d","South Dakota",101,110,109,11.35,11.70,1146,1287,112
+14,"d","Texas",50,65,130,7.30,9.80,365,637,175
+14,"d","Utah",39,34,87,9.00,7.60,351,258,74
+14,"d","",,,,,,,,
+14,"d","Other States 2/",200,199,100,10.00,10.07,1996,2002,100
+14,"d","",,,,,,,,
+14,"d","United States",3014,3121,104,10.55,10.63,31790,33167,104
+14,"c",""
+14,"f","1/ Number of pigs born March-May that were still on hand June 1, or had been sold."
+14,"f","2/ Individual State estimates not available for the 34 Other States."
+24,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+24,"t","Sows Farrowing, Pigs per Litter, and Pig Crop – States and United States: June-August 2016-2018"
+24,"t","[May not add due to rounding]"
+24,"h","","","","","","","","","",""
+24,"h","","Sows farrowing","Sows farrowing","Sows farrowing","Sows farrowing","Pigs per litter","Pigs per litter","Pig crop 1/","Pig crop 1/","Pig crop 1/"
+24,"h","","","","","","","","","",""
+24,"h","State","","","","2018 as","","","","","2017 as"
+24,"h","","2016","2017","2018 2/","percent","2016","2017","2016","2017","percent"
+24,"h","","","","","of 2017","","","","","of 2016"
+24,"h","","","","","","","","","",""
+24,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(percent)","(number)","(number)","(1,000 head)","(1,000 head)","(percent)"
+24,"d","Colorado",78,78,77,99,10.10,10.90,788,850,108
+24,"d","Illinois",260,265,295,111,10.55,10.75,2743,2849,104
+24,"d","Indiana",145,135,140,104,10.60,10.35,1537,1397,91
+24,"d","Iowa",510,530,570,108,11.00,11.20,5610,5936,106
+24,"d","Kansas",89,85,78,92,10.50,10.60,935,901,96
+24,"d","Michigan",50,54,54,100,10.50,10.80,525,583,111
+24,"d","Minnesota",310,305,305,100,11.10,11.40,3441,3477,101
+24,"d","Missouri",215,235,245,104,10.10,10.15,2172,2385,110
+24,"d","Nebraska",185,190,190,100,11.35,11.65,2100,2214,105
+24,"d","North Carolina",485,490,470,96,10.20,10.05,4947,4925,100
+24,"d","",,,,,,,,,
+24,"d","Ohio",92,97,91,94,10.60,10.70,975,1038,106
+24,"d","Oklahoma",200,205,205,100,10.65,10.60,2130,2173,102
+24,"d","Pennsylvania",48,51,54,106,10.45,10.60,502,541,108
+24,"d","South Dakota",97,105,112,107,10.75,11.30,1043,1187,114
+24,"d","Texas",45,52,65,125,9.30,7.80,419,406,97
+24,"d","Utah",39,36,26,72,9.50,9.00,371,324,87
+24,"d","",,,,,,,,,
+24,"d","Other States 3/",209,208,193,93,10.03,9.88,2093,2058,98
+24,"d","",,,,,,,,,
+24,"d","United States",3057,3121,3170,102,10.58,10.65,32331,33244,103
+24,"c",""
+24,"f","1/ Number of pigs born June-August that were still on hand September 1, or had been sold."
+24,"f","2/ Intentions."
+24,"f","3/ Individual State estimates not available for the 34 Other States."
+41,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+41,"t","Sows Farrowing, Pigs per Litter, and Pig Crop – States and United States: September-November 2016-2018"
+41,"t","[May not add due to rounding]"
+41,"h","","","","","","","","","",""
+41,"h","","Sows farrowing","Sows farrowing","Sows farrowing","Sows farrowing","Pigs per litter","Pigs per litter","Pig crop 1/","Pig crop 1/","Pig crop 1/"
+41,"h","","","","","","","","","",""
+41,"h","","","","","2018 as","","","","","2017 as"
+41,"h","State","2016","2017","2018 2/","percent","2016","2017","2016","2017","percent"
+41,"h","","","","","of 2017","","","","","of 2016"
+41,"h","","","","","","","","","",""
+41,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(percent)","(number)","(number)","(1,000 head)","(1,000 head)","(percent)"
+41,"d","Colorado",74,72,73,101,10.40,10.20,770,734,95
+41,"d","Illinois",260,265,290,109,10.60,10.70,2756,2836,103
+41,"d","Indiana",140,135,130,96,10.30,10.35,1442,1397,97
+41,"d","Iowa",550,560,570,102,10.90,11.15,5995,6244,104
+41,"d","Kansas",82,83,84,101,10.60,10.80,869,896,103
+41,"d","Michigan",49,53,54,102,10.60,10.90,519,578,111
+41,"d","Minnesota",310,320,305,95,11.20,11.45,3472,3664,106
+41,"d","Missouri",210,235,245,104,10.45,10.40,2195,2444,111
+41,"d","Nebraska",180,195,190,97,11.60,11.70,2088,2282,109
+41,"d","North Carolina",460,460,470,102,10.30,10.20,4738,4692,99
+41,"d","",,,,,,,,,
+41,"d","Ohio",96,100,96,96,10.50,10.80,1008,1080,107
+41,"d","Oklahoma",195,200,205,103,10.55,10.70,2057,2140,104
+41,"d","Pennsylvania",50,50,55,110,10.50,10.40,525,520,99
+41,"d","South Dakota",100,105,113,108,10.90,11.45,1090,1202,110
+41,"d","Texas",48,60,66,110,9.90,9.20,475,552,116
+41,"d","Utah",38,35,36,103,9.00,9.00,342,315,92
+41,"d","",,,,,,,,,
+41,"d","Other States 3/",204,202,198,98,9.96,10.15,2031,2048,101
+41,"d","",,,,,,,,,
+41,"d","United States",3046,3130,3180,102,10.63,10.74,32372,33624,104
+41,"c",""
+41,"f","1/ Number of pigs born September-November that were still on hand December 1, or had been sold."
+41,"f","2/ Intentions."
+41,"f","3/ Individual State estimates not available for the 34 Other States."
+19,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+19,"t","Reliability of June 1 Hog Estimates"
+19,"t","[Based on data for the previous twenty quarters]"
+19,"h","","","","","","","",""
+19,"h","","Root mean","90 percent","Difference between first and latest estimate","Difference between first and latest estimate","Difference between first and latest estimate","Difference between first and latest estimate","Difference between first and latest estimate"
+19,"h","","square error","confidence","","","","",""
+19,"h","","","level","","","","",""
+19,"h","Item","","","","","","Years","Years"
+19,"h","","","","","","","",""
+19,"h","","","","Average","Smallest","Largest","Below latest","Above latest"
+19,"h","","","","","","","",""
+19,"u","","(percent)","(percent)","(1,000)","(1,000)","(1,000)","(number)","(number)"
+19,"d","All hogs and pigs",1.4,2.4,766,10.4,1726,13,7
+19,"d","",,,,,,,
+19,"d","Pig crop",2.3,3.9,545,0,1260,13,6
+19,"d","",,,,,,,
+19,"d","Expected farrowings",,,,,,,
+19,"d","",,,,,,,
+19,"d","  Next quarter",2.7,4.7,70,10,129,11,9
+19,"d","",,,,,,,
+19,"d","  Following quarter",3.1,5.4,79,11,197,11,9
+19,"d","",,,,,,,
+19,"c",""
+42,"t","Quarterly Hogs and Pigs: Released June 28, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+42,"t","Records by Quarter – United States: 1866 to Present"
+42,"t","[This table provides data users with record high estimates of all hogs and pigs, market hogs, pig crop, and pigs per litter since each data series began]"
+42,"h","","","",""
+42,"h","Item","Estimate","Record high","Series began"
+42,"h","","","",""
+42,"u","","(1,000 head)","(year)","(year)"
+42,"d","All hogs and pigs",,,
+42,"d","  March 1",72938,2018,1988
+42,"d","  June 1",73451,2018,1964
+42,"d","  September 1",73559,2017,1988
+42,"d","  December 1",83741,1943,1866
+42,"d","",,,
+42,"d","Market",,,
+42,"d","  March 1",66728,2018,1988
+42,"d","  June 1",67131,2018,1964
+42,"d","  September 1",67442,2017,1988
+42,"d","  December 1",67516,2017,1963
+42,"d","",,,
+42,"d","Pig crop",,,
+42,"d","  December-February1/",32341,2018,1970
+42,"d","  March-May",33167,2018,1970
+42,"d","  June-August",33244,2017,1970
+42,"d","  September-November",33624,2017,1970
+42,"d",""
+42,"u","","(number)","(year)","(year)"
+42,"d","Pigs per litter",,,
+42,"d","  December-February1/",10.58,2018,1970
+42,"d","  March-May",10.63,2018,1970
+42,"d","  June-August",10.65,2017,1970
+42,"d","  September-November",10.74,2017,1970
+42,"c",""
+42,"f","1/ December preceding year."

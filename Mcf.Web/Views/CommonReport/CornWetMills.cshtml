@@ -1,0 +1,240 @@
+﻿@model McF.Contracts.Years
+@{
+    /**/
+
+    ViewBag.Title = null;
+    Layout = null;
+}
+@using System.Web.Helpers;
+<meta charset="utf-8" />
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/maps/modules/map.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/maps/highmaps.js"></script>
+<script src="http://code.highcharts.com/maps/modules/data.js"></script>
+<script src="http://code.highcharts.com/maps/modules/drilldown.js"></script>
+<script src="http://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+<script src="~/Scripts/offline-exporting.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script src="~/Scripts/jquery.combobox.js"></script>
+<script src="~/Scripts/proj4.js"></script>
+<script src="~/Scripts/angular-ui/highstock.js"></script>
+<script src="~/Scripts/common-chart.js"></script>
+
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.css" rel="stylesheet" />
+<link href="~/Content/chart.css" rel="stylesheet" />
+
+@using (Html.BeginForm("CornWetMills", "CommonReport", FormMethod.Post))
+{
+    <div id="demo-wrapper">
+        <div class="chart-title clearfix">
+            <div class="arrowToggle">
+                <span class="link" id="chart_toggle">
+                    <i class="fa fa-caret-down"></i>
+                </span>            
+                <div id="chart-dropDown" class="collapse chart-dropDown" style="display:none;">
+                    <form>
+                        <ul>
+                            <li class="clearfix">
+                                <span class="grid-lines">
+                                    <label for="SelectVGrid" class="switch no-switch">
+                                        <input type="checkbox" name="toggleGrid" id="SelectVGrid" value="SelectVGrid" onclick="SelectGridline(this.value, this.checked)">
+                                        <span class="image" title="Vertical Grid line">
+                                            <img src="~/img/chart-icon/grid-line.png" class="img-responsive" alt="Grid line" />
+                                        </span>
+                                    </label>
+                                    <label for="SelectHGrid" class="switch no-switch">
+                                        <input type="checkbox" name="toggleGrid" id="SelectHGrid" value="SelectHGrid" onclick="SelectGridline(this.value, this.checked)">
+                                        <span class="image" title="Horizontal Grid line">
+                                            <img src="~/img/chart-icon/grid-line-h.png" class="img-responsive" alt="Grid line" />
+                                        </span>
+                                    </label>
+                                </span>
+                                <label class="switch no-switch" for="CheckGrid" id="IsToggleGrid">
+                                    <input type="checkbox" id="CheckGrid" onclick="SetGrid()">
+                                    <span class="switch-slider round"></span>
+                                </label>
+                            </li>
+                            <li class="clearfix">
+                                <span class="image" title="Legends"><img src="~/img/chart-icon/legend.png" class="img-responsive" alt="Legends" /></span>
+                                <label class="switch" for="legends">
+                                    <input type="checkbox" id="legends" onclick="SetValues()">
+                                    <span class="switch-slider round"></span>
+                                </label>
+                            </li>
+                            <li class="clearfix">
+                                <span class="image" title="Data label"><img src="~/img/chart-icon/data-label.png" class="img-responsive" alt="Data label" /></span>
+                                <label class="switch" for="datalbl">
+                                    <input type="checkbox" id="datalbl" onclick="SetValues()">
+                                    <span class="switch-slider round"></span>
+                                </label>
+                            </li>
+                            <li class="clearfix">
+                                <span class="image" title="Drawing"><img src="~/img/chart-icon/drawing.png" class="img-responsive" alt="Drawing" /></span>
+                                <label class="switch no-switch" for="drawing">
+                                    <input type="checkbox" id="drawing">
+                                    <span class="switch-slider round"></span>
+                                </label>
+                            </li>
+                            <li class="clearfix">
+                                <span class="image" title="Cross hair"><img src="~/img/chart-icon/cross-hair.png" class="img-responsive" alt="Cross hair" /></span>
+                                <label class="switch no-switch" for="crosshair">
+                                    <input type="checkbox" id="crosshair">
+                                    <span class="switch-slider round"></span>
+                                </label>
+                            </li>
+                            <li class="clearfix">
+                                <span class="image" title="Utilities"><img src="~/img/chart-icon/utilities.png" class="img-responsive" alt="Utilities" /></span>
+                                <label class="switch no-switch" for="utilities">
+                                    <input type="checkbox" id="utilities">
+                                    <span class="switch-slider round"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </form>                
+                </div>
+            </div>
+        </div>
+        <div id="mapBox" style="height:410px;width:100%; border:2px;">
+            <div id="containerData" style="height:510px;width:100%"></div>
+        </div>
+    </div>
+    <script>
+        
+        function SetValues(legend) {
+        //alert(value)
+        var checkBoxLegend = document.getElementById("legends");
+        var checkDataLbl = document.getElementById("datalbl");
+        var dataLengend = true;
+        var lbl = 0;
+            if (legend == true) {
+                checkBoxLegend.checked = true;
+        }
+        if (checkBoxLegend.checked == true) {
+            dataLengend = true;
+        }
+        else {
+            dataLengend = false;
+        }
+        if (checkDataLbl.checked == true) {
+            lbl = 1
+        }
+        $(document).ready(function () {
+            //var data = [{ "name": "National Sugar Marketing", "city": "Brawley", "state_": "CA", "country": "US", "lat": 32.9786566, "lon": -115.530267 }, { "name": "National Sugar Marketing", "city": "Nampa", "state_": "ID", "country": "US", "lat": 43.5788175, "lon": -116.55978 }, { "name": "National Sugar Marketing", "city": "Twin Falls", "state_": "ID", "country": "US", "lat": 42.5558381, "lon": -114.4700518 }, { "name": "National Sugar Marketing", "city": "Mini-Cassia", "state_": "ID", "country": "US", "lat": 42.532491, "lon": -113.80417 }, { "name": "Cargill", "city": "Gramercy", "state_": "LA", "country": "US", "lat": 30.0474239, "lon": -90.6898128 }, { "name": "Domino Foods", "city": "Crockett", "state_": "CA", "country": "US", "lat": 38.0524208, "lon": -122.2130236 }, { "name": "Domino Foods", "city": "Chalmette", "state_": "LA", "country": "US", "lat": 29.942783, "lon": -89.9635162 }, { "name": "Domino Foods", "city": "Baltimore", "state_": "MD", "country": "US", "lat": 39.2903848, "lon": -76.6121893 }, { "name": "Domino Foods", "city": "Yonkers", "state_": "NY", "country": "US", "lat": 40.9312099, "lon": -73.8987469 }, { "name": "Domino Foods", "city": "Okeelanta", "state_": "FL", "country": "US", "lat": 26.609444, "lon": -80.711667 }, { "name": "Louis Dreyfus (Imperial Sugar)", "city": "Savannah", "state_": "GA", "country": "US", "lat": 32.0808989, "lon": -81.091203 }, { "name": "Michigan Sugar", "city": "Bay City", "state_": "MI", "country": "US", "lat": 43.5944677, "lon": -83.8888647 }, { "name": "Michigan Sugar", "city": "Caro", "state_": "MI", "country": "US", "lat": 43.4911322, "lon": -83.396897 }, { "name": "Michigan Sugar", "city": "Sebewaing", "state_": "MI", "country": "US", "lat": 43.7322394, "lon": -83.4510724 }, { "name": "Michigan Sugar", "city": "Croswell", "state_": "MI", "country": "US", "lat": 43.2755809, "lon": -82.621038 }, { "name": "Michigan Sugar", "city": "Taylor", "state_": "MI", "country": "US", "lat": 42.240872, "lon": -83.2696509 }, { "name": "United Sugars", "city": "Worland", "state_": "WY", "country": "US", "lat": 44.0169014, "lon": -107.9553721 }, { "name": "United Sugars", "city": "Sidney", "state_": "MT", "country": "US", "lat": 47.7166836, "lon": -104.1563253 }, { "name": "United Sugars", "city": "East Grand Forks", "state_": "MN", "country": "US", "lat": 47.9311871, "lon": -97.009347 }, { "name": "United Sugars", "city": "Hillsboro", "state_": "ND", "country": "US", "lat": 47.371029, "lon": -97.0315309 }, { "name": "United Sugars", "city": "Moorhead", "state_": "MN", "country": "US", "lat": 46.8737648, "lon": -96.7678039 }, { "name": "United Sugars", "city": "Wahpeton", "state_": "ND", "country": "US", "lat": 46.1546779, "lon": -96.8958656 }, { "name": "United Sugars", "city": "Crookston", "state_": "MN", "country": "US", "lat": 47.7745617, "lon": -96.6093911, }, { "name": "United Sugars", "city": "Drayton", "state_": "ND", "country": "US", "lat": 48.5950979, "lon": -97.1940786 }, { "name": "United Sugars", "city": "Clewiston", "state_": "LA", "country": "US", "lat": 26.7542312, "lon": -80.9336753 }, { "name": "Western Sugar", "city": "Billings", "state_": "MT", "country": "US", "lat": 45.7832856, "lon": -108.5006904 }, { "name": "Western Sugar", "city": "Lovell", "state_": "WY", "country": "US", "lat": 44.8374532, "lon": -108.3895614 }, { "name": "Western Sugar", "city": "Scottsbluff", "state_": "NE", "country": "US", "lat": 41.8666341, "lon": -103.6671662 }, { "name": "Western Sugar", "city": "Fort Morgan", "state_": "CO", "country": "US", "lat": 40.2502582, "lon": -103.7999509 }];
+            var data = @Html.Raw(Json.Encode(ViewBag.CornWetMills));
+            //alert(data);
+            //var filtered = data.filter(a => a.year == 2018);
+            //var yahooOnly = JSON.parse(data).filter(({ year }) => year == 2018);
+            //alert(yahooOnly)
+            var mapData = {};
+            $.each(JSON.parse(data), function (index, item) {
+                var object = mapData[item.name + '  ' + item.category];
+                if (!object) {
+                    object = [];
+                    mapData[item.name + '  ' + item.category] = object;
+                }
+                object.push(item);
+            });
+
+            var chartOptions = {
+                chart: {
+                    events: {
+                        load: function () {
+                            var label = this.renderer.label("DataSource: USDA")
+                                .css({
+                                    width: '400px',
+                                    fontSize: '10px',
+
+                                })
+                                .attr({
+                                    'stroke': 'silver',
+                                    'stroke-width': 0,
+                                    'r': 2,
+                                    'padding': 10
+                                })
+                                .add();
+
+                            label.align(Highcharts.extend(label.getBBox(), {
+                                align: 'right',
+                                x: 0, // offset
+                                verticalAlign: 'bottom',
+                                y: 0 // offset
+                            }), null, 'spacingBox');
+
+                        }
+                    },
+                    marginBottom: 120
+                },
+                title: {
+                    text: 'U.S. Corn Wet Mills',
+                    style: {
+                        color: '#8B3910',
+                        fontSize: '36px',
+                        fontFamily: 'Cordia New'
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                legend: {
+                    symbolWidth: 10,
+                    enabled: dataLengend,
+                    itemStyle: {
+                        color: '#000000',
+                        fontWeight: 'normal',
+                        fontSize: '13px'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '',
+                    pointFormat: '<b>{series.name}</b>'
+                },
+                mapNavigation: {
+                    enabled: true
+                },
+                series: [{
+                    name: 'Basemap',
+                    mapData: Highcharts.maps['countries/us/us-all'],
+                    showInLegend: false
+                }]
+            };
+
+            $.each(mapData, function (key, value) {
+                chartOptions.series.push({
+                    type: 'mappoint',
+                    name: key,
+                    showInLegend: true,
+                    data: value,
+                    marker: {
+                        symbol: 'circle',
+                        radius: 5
+                    },
+                    dataLabels: {
+                        enabled: lbl,
+                        formatter: function () {
+                            return this.point.city + ', ' + this.point.state_;
+                        },
+                        style: {
+                            fontWeight: 'normal',
+                            fontSize: '13px'
+                        }
+                    }
+                });
+            });
+
+            Highcharts.mapChart('containerData', chartOptions);
+        });
+    }
+    SetValues(true)
+    </script>
+}
+
+@*<script>
+        function setemb() {
+            alert(@Html.Raw(ViewBag.embeddedText).ToHtmlString());
+        }
+        setemb();
+    </script>*@

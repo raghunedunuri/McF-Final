@@ -1,0 +1,80 @@
+﻿@using McF.Contracts;
+@{
+    ViewBag.Title = "Home Page";
+    var jobsummary = (JobSummary)ViewBag.JobSummary;
+}
+<div class="main-title clearfix">
+    <h1 class="title">Dashboard</h1>
+    <div class="pull-right">
+        <div class="row">
+            <div class="col-xs-12 text-right">
+                <a href="@Url.Action("AddDataSource","Home")" focus-index="1" focus-element="autofocus" class="btn btn-primary">ADD DATASOURCE</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="" ng-controller="homecontroller" ng-init="GetJobSummary()">  
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <b class="lead">Jobs Summary</b>
+                            </div>
+                            @*<div class="col-xs-6 text-right">
+                                    <span class="fa fa-2x fa-play v-align" title="RUN"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="fa fa-2x fa-edit v-align" title="EDIT"></span>
+                                </div>*@
+                        </div>
+
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-6">
+                                    <div style="margin-bottom:10px;"><span style="font-size:16px">Scheduled</span></div>
+                                    <div style="margin-bottom:10px;"><span style="font-size:16px">In Progress</span></div>
+                                    <div style="margin-bottom:10px;"><span style="font-size:16px">Completed</span></div>
+                                    <div style="margin-bottom:10px;"><span style="font-size:16px">Failed</span></div>
+                                    <div style="margin-bottom:10px;"><span style="font-size:16px">New Records</span></div>
+                                    <div style="margin-bottom:10px;"><span style="font-size:16px">New Symbols</span></div>
+                                    <div style="margin-bottom:10px;"><span style="font-size:16px">Updated Records</span></div>
+                                    <div style="margin-bottom:10px;"><span style="font-size:16px">Un Mapped Records</span></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div style="margin-bottom:10px;"><b style="font-size:16px" ng-bind="jobSummary.scheduleToRun"></b></div>
+                                    <div style="margin-bottom:10px;"><b style="font-size:16px" ng-bind="jobSummary.inprogress"></b></div>
+                                    <div style="margin-bottom:10px;"><b style="font-size:16px" ng-bind="jobSummary.completedJobs"></b></div>
+                                    <div style="margin-bottom:10px;"><b style="font-size:16px" ng-bind="jobSummary.failed"></b></div>
+                                    <div style="margin-bottom:10px;"><b style="font-size:16px" ng-bind="jobSummary.newRecords"></b></div>
+                                    <div style="margin-bottom:10px;"><b style="font-size:16px" ng-bind="jobSummary.newSymbols"></b></div>
+                                    <div style="margin-bottom:10px;"><b style="font-size:16px" ng-bind="jobSummary.updatedRecords"></b></div>
+                                    <div style="margin-bottom:10px;"><b style="font-size:16px" ng-bind="jobSummary.unmappedRecords"></b></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <b class="lead">Jobs Status</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div id="columnchart" class="columnchart">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

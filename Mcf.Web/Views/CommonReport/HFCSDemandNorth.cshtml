@@ -1,0 +1,352 @@
+﻿
+@{
+    ViewBag.Title = null;
+    Layout = null;
+}
+<meta charset="utf-8" />
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+<script src="~/Scripts/offline-exporting.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script src="~/Scripts/jquery.combobox.js"></script>
+<script src="~/Scripts/common-chart.js"></script>
+
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.css" rel="stylesheet" />
+<link href="~/Content/chart.css" rel="stylesheet" />
+
+<div id="demo-wrapper">
+    <div class="chart-title clearfix">
+        <div class="arrowToggle">
+            <span class="link" id="chart_toggle">
+                <i class="fa fa-caret-down"></i>
+            </span>
+            <div id="chart-dropDown" class="collapse chart-dropDown" style="display:none;">
+                <form>
+                    <ul>
+                        <li class="clearfix">
+                            <span class="grid-lines">
+                                <label for="SelectVGrid" class="switch no-switch">
+                                    <input type="checkbox" name="toggleGrid" id="SelectVGrid" value="SelectVGrid" onclick="SelectGridline(this.value, this.checked)">
+                                    <span class="image" title="Vertical Grid line">
+                                        <img src="~/img/chart-icon/grid-line.png" class="img-responsive" alt="Grid line" />
+                                    </span>
+                                </label>
+                                <label for="SelectHGrid" class="switch no-switch">
+                                    <input type="checkbox" name="toggleGrid" id="SelectHGrid" value="SelectHGrid" onclick="SelectGridline(this.value, this.checked)">
+                                    <span class="image" title="Horizontal Grid line">
+                                        <img src="~/img/chart-icon/grid-line-h.png" class="img-responsive" alt="Grid line" />
+                                    </span>
+                                </label>
+                            </span>
+                            <label class="switch no-switch" for="CheckGrid" id="IsToggleGrid">
+                                <input type="checkbox" id="CheckGrid" onclick="SetGrid()">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Legends"><img src="~/img/chart-icon/legend.png" class="img-responsive" alt="Legends" /></span>
+                            <label class="switch no-switch" for="legends">
+                                <input type="checkbox" id="legends" onclick="updateChart()">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Data label"><img src="~/img/chart-icon/data-label.png" class="img-responsive" alt="Data label" /></span>
+                            <label class="switch no-switch" for="datalbl">
+                                <input type="checkbox" id="datalbl" onclick="updateChart()">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Drawing"><img src="~/img/chart-icon/drawing.png" class="img-responsive" alt="Drawing" /></span>
+                            <label class="switch no-switch" for="drawing">
+                                <input type="checkbox" id="drawing">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Cross hair"><img src="~/img/chart-icon/cross-hair.png" class="img-responsive" alt="Cross hair" /></span>
+                            <label class="switch no-switch" for="crosshair">
+                                <input type="checkbox" id="crosshair">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Utilities"><img src="~/img/chart-icon/utilities.png" class="img-responsive" alt="Utilities" /></span>
+                            <label class="switch no-switch" for="utilities">
+                                <input type="checkbox" id="utilities">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="mapBox" style="height:410px;width:100%; border:2px;">
+        <div id="containerData" style="height:410px;width:100%"></div>
+    </div>
+</div>
+<script>
+    
+
+
+
+    var selectedVertical = false;
+    var selectedHorzintal = false;
+    var checkBoxGrid = document.getElementById("CheckGrid");
+    var IsToggleGrid = document.getElementById("IsToggleGrid");
+    var SelectVGrid = document.getElementById("SelectVGrid");
+    var SelectHGrid = document.getElementById("SelectHGrid");
+
+    function SelectGridline(value, checked) {
+        if (checked == true) {
+            IsToggleGrid.classList.remove("no-switch");
+            checkBoxGrid.checked = true;
+            if (value == 'SelectVGrid') {
+                selectedVertical = true;
+            }
+            if (value == 'SelectHGrid') {
+                selectedHorzintal = true;
+            }
+            updateChart();
+        }
+        else {
+            if (value == 'SelectVGrid') {
+                selectedVertical = false;
+                if (selectedHorzintal == false) {
+                    IsToggleGrid.classList.remove("no-switch");
+                    checkBoxGrid.checked = false;
+                }
+            }
+            if (value == 'SelectHGrid') {
+                selectedHorzintal = false;
+                if (selectedVertical == false) {
+                    IsToggleGrid.classList.remove("no-switch");
+                    checkBoxGrid.checked = false;
+                }
+            }
+            updateChart();
+        }
+
+    }
+    function SetGrid() {
+        if (checkBoxGrid.checked == false) {
+            selectedHorzintal = false;
+            selectedVertical = false;
+            SelectVGrid.checked = false;
+            SelectHGrid.checked = false;
+            IsToggleGrid.classList.add("no-switch");
+            updateChart();
+        }
+    }
+    var _chart, categories = [], demand = [], capacity = [];
+    //$(document).ready(function () {
+    //    var object;
+    //    $.each(json, function (inde, item) {
+    //        categories.push(item.year);
+    //        object = { y: item.hfcs_capacity };
+    //        if (item.comment && item.comment !== '') {
+    //            object.marker = {
+    //                text: item.comment,
+    //                fillColor: '#FFFF00',
+    //                lineColor: '#d23928',
+    //                lineWidth: 2,
+    //                radius: 8
+    //            };
+    //        }
+    //        capacity.push(object);
+    //        demand.push(item.hfcs_demand);
+    //    });
+
+        function updateChart(legend) {
+
+            $(document).ready(function () {
+                var json = [{ "year": 1994, "hfcs_demand": 15.5, "hfcs_capacity": 16, "comment": "" }, { "year": 1995, "hfcs_demand": 16, "hfcs_capacity": 20, "comment": "" }, { "year": 1996, "hfcs_demand": 17, "hfcs_capacity": 23, "comment": "1994-97:Industry expansion for Mexico" }, { "year": 1997, "hfcs_demand": 18, "hfcs_capacity": 25, "comment": "" }, { "year": 1998, "hfcs_demand": 19, "hfcs_capacity": 23, "comment": "" }, { "year": 1999, "hfcs_demand": 20, "hfcs_capacity": 23, "comment": "1999:Cargill stops HFCS production at Dayton,Ohio" }, { "year": 2000, "hfcs_demand": 20, "hfcs_capacity": 24, "comment": "" }, { "year": 2001, "hfcs_demand": 20, "hfcs_capacity": 24, "comment": "" }, { "year": 2002, "hfcs_demand": 20, "hfcs_capacity": 24, "comment": "" }, { "year": 2002, "hfcs_demand": 20, "hfcs_capacity": 24, "comment": "" }, { "year": 2003, "hfcs_demand": 19, "hfcs_capacity": 23, "comment": "" }, { "year": 2004, "hfcs_demand": 19, "hfcs_capacity": 23, "comment": "" }, { "year": 2005, "hfcs_demand": 20, "hfcs_capacity": 22, "comment": "2005:Cargill closes Dimmitt, Tex.plant" }, { "year": 2006, "hfcs_demand": 20, "hfcs_capacity": 21, "comment": "2006:Cargill re-opens Dayton plant" }, { "year": 2007, "hfcs_demand": 20, "hfcs_capacity": 23, "comment": "" }, { "year": 2008, "hfcs_demand": 19, "hfcs_capacity": 23, "comment": "" }, { "year": 2009, "hfcs_demand": 18, "hfcs_capacity": 23, "comment": "2009:Cargill permanently closes Decatur,Ala." }, { "year": 2010, "hfcs_demand": 20, "hfcs_capacity": 22, "comment": "" }, { "year": 2011, "hfcs_demand": 20, "hfcs_capacity": 22, "comment": "" }, { "year": 2012, "hfcs_demand": 20, "hfcs_capacity": 23, "comment": "" }, { "year": 2013, "hfcs_demand": 19, "hfcs_capacity": 23, "comment": "" }, { "year": 2014, "hfcs_demand": 19, "hfcs_capacity": 23, "comment": "" }, { "year": 2015, "hfcs_demand": 18, "hfcs_capacity": 21, "comment": "2015:Cargill closes Memphis, Tenn.plant, removing 9% of HFCS capacity" }, { "year": 2016, "hfcs_demand": 18, "hfcs_capacity": 21, "comment": "2016:Ingredion sells Port Colborne, Ont., removing 2% of HFCS capacity" }, { "year": 2017, "hfcs_demand": 17, "hfcs_capacity": 20, "comment": "" }];
+                var object = {};
+                $.each(json, function (inde, item) {
+                    
+            categories.push(item.year);
+            object = { y: item.hfcs_capacity };
+                    if (item.comment && item.comment !== '') {
+                        
+                object.marker = {
+                    text: item.comment,
+                    fillColor: '#FFFF00',
+                    lineColor: '#d23928',
+                    lineWidth: 2,
+                    radius: 8
+                };
+            }
+            capacity.push(object);
+            demand.push(item.hfcs_demand);
+        });
+        
+        var checkBoxLegend = document.getElementById("legends");
+        if (legend == true) {
+            checkBoxLegend.checked = true;
+        }
+
+        var checkDataLbl = document.getElementById("datalbl");
+        var Vgrid = 0;
+        var Hgrid = 0;
+        var data = 0;
+        var lbl = 0;
+        if (checkBoxLegend.checked == true) {
+            data = 1;
+        }
+        else {
+            data = 0;
+        }
+        if (selectedVertical == true) {
+            var Vgrid = 1
+        }
+        else {
+            var Vgrid = 0;
+        }
+        if (selectedHorzintal == true) {
+            var Hgrid = 1
+        }
+        else {
+            var Hgrid = 0;
+        }
+        if (checkBoxGrid.checked == false) {
+            Vgrid = 0;
+            Hgrid = 0;
+        }
+        if (checkDataLbl.checked == true) {
+            lbl = 1
+        }
+        Highcharts.setOptions({
+            lang: {
+                thousandsSep: ','
+            }
+        });
+        _chart = Highcharts.chart('containerData', {
+                chart: {
+                    type: 'spline',
+                },
+                title: {
+                    text: 'Theoretical North American HFCS demand',
+                    style: {
+                        color: '#8B3910',
+                        fontSize: '36px',
+                        fontWeight: 'normal',
+                        fontFamily: 'Cordia New'
+                    }
+                },
+                xAxis: {
+                    categories: categories,
+                    gridLineWidth: Vgrid,
+                    labels: {
+                        overflow: 'justify'
+                    }
+                },
+            yAxis: {
+                gridLineWidth: Hgrid,
+                minorGridLineWidth: Hgrid,
+                    title: {
+                        text: 'Billion pounds, dry',
+                        style: {
+                            color: '#8B3910',
+                            fontSize: '24px',
+                            fontFamily: 'Cordia New'
+                        }
+                    },
+                },
+                tooltip: {
+                    formatter: function () {
+                        var comment = (this.point.marker) ? '<b>' + this.point.marker.text + '</b>' : '';
+                        return '<b>' + this.x + '</b><br/>' +
+                            this.series.name + ': ' + this.y + '<br/>' + comment;
+                    }
+                },
+                legend: {
+                    symbolWidth: 20,
+                    enabled: data,
+                    itemStyle: {
+                        color: '#000000',
+                        fontWeight: 'normal',
+                        fontSize: '13px'
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        dataLabels: {
+                            enabled: lbl,
+                            style: {
+                                color: '#B5B5B5',
+                                fontSize: '10px',
+                                textOutline: '0px contrast',
+                                fontWeight: 'normal'
+                                //textShadow: false
+                            }
+                        },
+                        lineWidth: 4,
+                        states: {
+                            hover: {
+                                lineWidth: 5
+                            }
+                        },
+                        marker: {
+                            enabled: true,
+                            lineWidth: 0,
+                            radius: 0
+                        }
+                    }
+                },
+                series: [{
+                    id: '_1',
+                    name: 'North American HFCS Capacity',
+                    data: capacity,
+                    color: '#007297'
+
+                }, {
+                    id: '_2',
+                    name: 'North American HFCS Demand',
+                    data: demand,
+                    color: '#FFC000'
+                }]
+        },
+            function (chart) { // on complete
+                function noop() { };
+                chart.renderer.button('<', chart.plotLeft - 20, chart.plotHeight + chart.plotTop, noop).addClass('left').add();
+
+
+                chart.renderer.button('>', chart.plotLeft + chart.plotWidth - 10, chart.plotHeight + chart.plotTop, noop).addClass('right').add();
+
+                $('.left').click(function () {
+                    chart.xAxis[0].setExtremes(0, 12);
+                });
+                $('.right').click(function () {
+                    chart.xAxis[0].setExtremes(13, 24);
+                })
+            }
+        );
+            });	
+        }
+
+        //$('#_comment').change(function () {
+        //    var enabled = this.checked;
+        //    _chart.update({
+        //        plotOptions: {
+        //            spline: {
+        //                marker: {
+        //                    enabled: enabled
+        //                }
+        //            }
+        //        }
+        //    });
+        //});
+
+
+
+        updateChart(true);
+        
+    //});	
+
+</script>
+

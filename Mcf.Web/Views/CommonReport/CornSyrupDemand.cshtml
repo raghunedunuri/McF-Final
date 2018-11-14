@@ -1,0 +1,283 @@
+﻿
+@{
+    ViewBag.Title = null;
+    Layout = null;
+}
+
+@*<h2>Index</h2>*@
+<meta charset="utf-8" />
+<script src="~/Scripts/angular-ui/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+<script src="~/Scripts/offline-exporting.js"></script>
+<script src="~/Scripts/common-chart.js"></script>
+
+<link href="~/Content/font-awesome.css" rel="stylesheet" />
+<link href="~/Content/chart.css" rel="stylesheet" />
+
+<div id="demo-wrapper">
+    <div class="chart-title clearfix">
+        <div class="arrowToggle">
+            <span class="link" id="chart_toggle">
+                <i class="fa fa-caret-down"></i>
+            </span>            
+            <div id="chart-dropDown" class="collapse chart-dropDown" style="display:none;">
+                <form>
+                    <ul>
+                        <li class="clearfix">
+                            <span class="grid-lines">
+                                <label for="SelectVGrid">
+                                    <input type="checkbox" name="toggleGrid" id="SelectVGrid" value="SelectVGrid" onclick="SelectGridline(this.value, this.checked)">
+                                    <span class="image" title="Vertical Grid line">
+                                        <img src="~/img/chart-icon/grid-line.png" class="img-responsive" alt="Grid line" />
+                                    </span>
+                                </label>
+                                <label for="SelectHGrid">
+                                    <input type="checkbox" name="toggleGrid" id="SelectHGrid" value="SelectHGrid" onclick="SelectGridline(this.value, this.checked)">
+                                    <span class="image" title="Horizontal Grid line">
+                                        <img src="~/img/chart-icon/grid-line-h.png" class="img-responsive" alt="Grid line" />
+                                    </span>
+                                </label>
+                            </span>
+                            <label class="switch no-switch" for="CheckGrid" id="IsToggleGrid">
+                                <input type="checkbox" id="CheckGrid" onclick="SetGrid()">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Legends"><img src="~/img/chart-icon/legend.png" class="img-responsive" alt="Legends" /></span>
+                            <label class="switch" for="legends">
+                                <input type="checkbox" id="legends" onclick="updateChart()">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Data label"><img src="~/img/chart-icon/data-label.png" class="img-responsive" alt="Data label" /></span>
+                            <label class="switch" for="datalbl">
+                                <input type="checkbox" id="datalbl" onclick="updateChart()">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Drawing"><img src="~/img/chart-icon/drawing.png" class="img-responsive" alt="Drawing" /></span>
+                            <label class="switch no-switch" for="drawing">
+                                <input type="checkbox" id="drawing">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Cross hair"><img src="~/img/chart-icon/cross-hair.png" class="img-responsive" alt="Cross hair" /></span>
+                            <label class="switch no-switch" for="crosshair">
+                                <input type="checkbox" id="crosshair">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                        <li class="clearfix">
+                            <span class="image" title="Utilities"><img src="~/img/chart-icon/utilities.png" class="img-responsive" alt="Utilities" /></span>
+                            <label class="switch no-switch" for="utilities">
+                                <input type="checkbox" id="utilities">
+                                <span class="switch-slider round"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </form>                
+            </div>
+        </div>
+    </div>
+    <div id="mapBox" style="height:480px;width:100%; border:2px;">
+        <div id="containerData" style="height:480px;width:100%"></div>
+    </div>
+</div>
+<script>
+    var selectedVertical = false;
+    var selectedHorzintal = false;
+    var checkBoxGrid = document.getElementById("CheckGrid");
+    var IsToggleGrid = document.getElementById("IsToggleGrid");
+    var SelectVGrid = document.getElementById("SelectVGrid");
+    var SelectHGrid = document.getElementById("SelectHGrid");
+
+    function SelectGridline(value, checked) {
+        if (checked == true) {
+            IsToggleGrid.classList.remove("no-switch");
+            checkBoxGrid.checked = true;
+            if (value == 'SelectVGrid') {
+                selectedVertical = true;
+            }
+            if (value == 'SelectHGrid') {
+                selectedHorzintal = true;
+            }
+            updateChart();
+        }
+        else {
+            if (value == 'SelectVGrid') {
+                selectedVertical = false;
+                if (selectedHorzintal == false) {
+                    IsToggleGrid.classList.remove("no-switch");
+                    checkBoxGrid.checked = false;
+                }
+            }
+            if (value == 'SelectHGrid') {
+                selectedHorzintal = false;
+                if (selectedVertical == false) {
+                    IsToggleGrid.classList.remove("no-switch");
+                    checkBoxGrid.checked = false;
+                }
+            }
+            updateChart();
+        }
+
+    }
+    function SetGrid() {
+        if (checkBoxGrid.checked == false) {
+            selectedHorzintal = false;
+            selectedVertical = false;
+            SelectVGrid.checked = false;
+            SelectHGrid.checked = false;
+            IsToggleGrid.classList.add("no-switch");
+            updateChart();
+        }
+    }
+
+    function updateChart(legend) {
+        $(document).ready(function () {
+
+            var json = [{ "value": 7.9, "year": 2000 }, { "value": 8, "year": 2001 }, { "value": 7.9, "year": 2002 }, { "value": 8.1, "year": 2003 }, { "value": 8.2, "year": 2004 }, { "value": 8.1, "year": 2005 }, { "value": 9, "year": 2006 }, { "value": 9.2, "year": 2007 }, { "value": 9, "year": 2008 }, { "value": 8.4, "year": 2009 }, { "value": 9.5, "year": 2010 }, { "value": 10.4, "year": 2011 }, { "value": 10.2, "year": 2012 }, { "value": 11, "year": 2013 }, { "value": 11.5, "year": 2014 }, { "value": 10.3, "year": 2015 }, { "value": 10.8, "year": 2016 }, { "value": 11.8, "year": 2017 }];
+            var categories = [], data = [];
+
+            $.each(json, function (index, item) {
+                categories.push(item.year);
+                data.push(item.value);
+            });
+            var checkBoxLegend = document.getElementById("legends");
+            
+            var checkDataLbl = document.getElementById("datalbl");
+            var Vgrid = 0;
+            var Hgrid = 0;
+            var legend = 0;
+            var lbl = 0;
+            //var data = null;
+            if (legend == true) {
+                checkBoxLegend.checked = true;
+            }
+            if (selectedVertical == true) {
+                var Vgrid = 1
+            }
+            else {
+                var Vgrid = 0;
+            }
+            if (selectedHorzintal == true) {
+                var Hgrid = 1
+            }
+            else {
+                var Hgrid = 0;
+            }
+            if (checkBoxGrid.checked == false) {
+                Vgrid = 0;
+                Hgrid = 0;
+            }
+            if (checkBoxLegend.checked == true) {
+                legend = 1
+            }
+            if (checkDataLbl.checked == true) {
+                lbl = 1
+            }
+            Highcharts.chart('containerData', {
+                chart: {
+                    type: 'column'
+                },
+
+                rangeSelector: {
+                    selected: 2,
+                    allButtonsEnabled: true
+                },
+                title: {
+                    text: 'North American corn syrup demand',
+                    style: {
+                        color: '#8B3910',
+                        fontSize: '36px',
+                        fontFamily: 'Cordia New'
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                xAxis: {
+                    categories: categories,
+                    gridLineWidth: Vgrid
+                },
+                yAxis: {
+                    allowDecimals: false,
+                    gridLineWidth: Hgrid,
+                    min: 0,
+                    title: {
+                        text: 'Billion pounds, wet basis',
+                        style: {
+                            color: '#8B3910',
+                            fontSize: '24px',
+                            fontFamily: 'Cordia New'
+                        },
+                    }
+                },
+                tooltip: {
+                    formatter: function () {
+                        return '<b>' + this.x + '</b><br/>' +
+                            this.series.name + ': ' + this.y + '<br/>';
+                    }
+                },
+                legend: {
+                    symbolWidth: 20,
+                    enabled: legend,
+                    itemStyle: {
+                        color: '#000000',
+                        fontWeight: 'normal',
+                        fontSize: '13px'
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'normal',
+                        dataLabels: {
+                            enabled: lbl,
+                            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                        }
+                    }
+                },
+                series: [{
+                    id: '_1',
+                    name: 'North American corn syrup demand',
+                    data: data,
+                    color: '#469E34'
+                }]
+            },
+                function (chart) { // on complete
+                    function noop() { };
+                    chart.renderer.button('<', chart.plotLeft - 20, chart.plotHeight + chart.plotTop, noop).addClass('left').add();
+
+
+                    chart.renderer.button('>', chart.plotLeft + chart.plotWidth - 10, chart.plotHeight + chart.plotTop, noop).addClass('right').add();
+
+                    $('.left').click(function () {
+                        chart.xAxis[0].setExtremes(0, 9);
+                    });
+                    $('.right').click(function () {
+                        chart.xAxis[0].setExtremes(10, 17);
+                    })
+                }
+            );
+
+
+        }
+        );
+        
+    }
+    updateChart(true);
+</script>
+@*<script>
+        function setemb() {
+            alert(@Html.Raw(ViewBag.embeddedText).ToHtmlString());
+        }
+        setemb();
+    </script>*@

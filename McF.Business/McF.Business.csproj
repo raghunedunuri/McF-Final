@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45BB1E84-C693-4D7A-8A72-B9B1DB27AA5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>McF.Business</RootNamespace>
+    <AssemblyName>McF.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IBaseService.cs" />
+    <Compile Include="Implementors\CommonService.cs" />
+    <Compile Include="Implementors\SugarService.cs" />
+    <Compile Include="Implementors\JobService.cs" />
+    <Compile Include="Implementors\DTNService.cs" />
+    <Compile Include="Implementors\EthanolService.cs" />
+    <Compile Include="Implementors\USWeeklyService.cs" />
+    <Compile Include="Implementors\COTService.cs" />
+    <Compile Include="Implementors\CropService.cs" />
+    <Compile Include="Interfaces\ICommonService.cs" />
+    <Compile Include="Interfaces\ISugarService.cs" />
+    <Compile Include="Interfaces\IJobService.cs" />
+    <Compile Include="Interfaces\IDTNService.cs" />
+    <Compile Include="Interfaces\IEthanolService.cs" />
+    <Compile Include="Interfaces\IUSWeeklyService.cs" />
+    <Compile Include="Interfaces\ICOTService.cs" />
+    <Compile Include="Interfaces\ICropService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\McF.Common\McF.Common.csproj">
+      <Project>{c94eaf40-9271-4a75-b6da-387fdc7326d1}</Project>
+      <Name>McF.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\McF.Contracts\McF.Contracts.csproj">
+      <Project>{e75b8f2b-14d3-4008-b2ea-801686552452}</Project>
+      <Name>McF.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\McF.DataAccess\McF.DataAccess.csproj">
+      <Project>{d1d2825c-add2-4a03-b3da-53b055703231}</Project>
+      <Name>McF.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

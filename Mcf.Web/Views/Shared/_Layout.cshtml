@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mckeany-Flavell</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!-- container section start -->
+    <section id="container" class="clearfix" ng-app="mcfapp" ng-controller="layoutcontroller" ng-init="populateDataSources();">
+        <!--sidebar start-->
+        <aside class="sidebar-container">
+            <div class="sidebar-logo">
+                <a href="@Url.Action("Dashboard","Home")"><img src="~/img/mcf-logo-new.png" class="img-responsive" alt="Logo" /></a>
+            </div>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="@Url.Action("Dashboard","Home")">
+                            <span class="icon"><i class="icon_house_alt"></i></span>
+                            <span class="text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <span class="icon"><i class="icon_document_alt"></i></span>
+                            <span class="text">Data Source</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            @*<li><a class="Broiler" href="@Url.Action("Index","Broiler")">Broiler & Hatchery</a></li>
+                            <li><a class="Cattle" href="@Url.Action("Index","Cattle")">Cattle on feed</a></li>
+                            <li><a class="Chicken" href="@Url.Action("Index","Chicken")">Chicken & Eggs</a></li>
+                            <li><a class="Cocoa" href="@Url.Action("Index","Cocoa")">Regional Grind</a></li>
+                            <li><a class="COT" href="@Url.Action("Index","COT")">COT</a></li>
+                            <li><a class="CropProgress" href="@Url.Action("Index","CropProgress")">Crop Progress</a></li>
+                            <li><a class="DTN" href="@Url.Action("Index","DTN")">Monthly Contracts</a></li>
+                            <li><a class="Ethonal" href="@Url.Action("Index","Ethonal")">Ethanol</a></li>
+                            <li><a class="Fats" href="@Url.Action("Index","Fats")">Fats & Oils</a></li>
+                            <li><a class="Hogs" href="@Url.Action("Index","Hogs")">Hogs & Pigs</a></li>
+                            <li><a class="Sugar" href="@Url.Action("Index","Sugar")">Sugar S&D</a></li>
+                            <li><a class="USWeekly" href="@Url.Action("Index","USWeekly")">Weekly Exports</a></li>
+                            <li><a class="WASDEWorld" href="@Url.Action("Index","WASDEWorld")">WASDE - World</a></li>
+                            <li><a class="WASDEDomestic" href="@Url.Action("Index","WASDEDomestic")">WASDE - Domestic</a></li>*@
+                            <li ng-repeat="datasource in datasources"><a class="{{datasource.dataSource}}" ng-href="@Url.Action("Index","DataView")?datasource={{datasource.dataSource}}&rootsource={{datasource.rootSource}}&name={{datasource.displayName}}">{{datasource.displayName}}</a></li>
+                        </ul>
+                    </li>
+                    @*<li>
+                            <a href="@Url.Action("Index","MasterList")" class="MasterList">
+                                <span class="icon"><i class="fa fa-list"></i></span>
+                                <span class="text">Master List</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index","UnitsMapping")" class="UnitsMapping">
+                                <span class="icon"><i class="fa fa-balance-scale"></i></span>
+                                <span class="text">Units Mapping</span>
+                            </a>
+                        </li>*@
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <span class="icon"><i class="fa fa-bar-chart"></i></span>
+                            <span class="text">Reports</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <!-- <li>
+                                <a href="@Url.Action("Corn","Reports")" class="">
+                                    <span>Corn</span>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="@Url.Action("SugarCompanies","Reports")" class="SugarCompanies">
+                                    <i class=""></i>
+                                    <span>U.S Sugar Companies</span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="@Url.Action("CornStocks","Reports")" class="CornStocks">
+                                    <i class=""></i>
+                                    <span>Corn Stocks</span>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="@Url.Action("CornWetMills","Reports")" class="CornWetMills">
+                                    <i class=""></i>
+                                    <span>U.S Corn Wet Mills</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("CornSyrupDemand","Reports")" class="CornSyrupDemand">
+                                    <i class=""></i>
+                                    <span>Corn Syrup Demand</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("MexicanSugarImports","Reports")" class="MexicanSugarImports">
+                                    <i class=""></i>
+                                    <span>U.S Imports of Mexican Sugar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("SugarMarket","Reports")" class="SugarMarket">
+                                    <i class=""></i>
+                                    <span>Sugar Market</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("BeetCaneSugarDeliveries","Reports")" class="BeetCaneSugarDeliveries">
+                                    <i class=""></i>
+                                    <span>Domestic Deliveries</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("SugarPrices","Reports")" class="SugarPrices">
+                                    <i class=""></i>
+                                    <span>Sugar Prices</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("SugarDeliveriesRegion","Reports")" class="SugarDeliveriesRegion">
+                                    <i class=""></i>
+                                    <span>Sugar Deliveries - Region</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("HFCSDemand","Reports")" class="HFCSDemand">
+                                    <i class=""></i>
+                                    <span>HFCS Demand</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("HFCSDemandNorth","Reports")" class="HFCSDemandNorth">
+                                    <i class=""></i>
+                                    <span>HFCS Demand - North</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("WetMillsNorth","Reports")" class="WetMillsNorth">
+                                    <i class=""></i>
+                                    <span>Wet Mills - North</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("HFCSDemandMonthly","Reports")" class="HFCSDemandMonthly">
+                                    <i class=""></i>
+                                    <span>HFCS Demand - Monthly</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content" ng-app="mcfapp">
+            <header class="header top-header dark-bg">
+                <div class="clearfix">
+                    <div class="pull-left header-left">
+                        <div class="toggle-nav">
+                            <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+                        </div>
+                        <div class="header-logo">
+                            <a href="@Url.Action("Index","Home")"><img src="~/img/logo-icon.png" class="img-responsive" alt="Logo" /></a>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <span>@(HttpContext.Current.Session["UserID"] != null ? "Welcome! " + HttpContext.Current.Session["UserID"].ToString() : String.Empty)&nbsp;|&nbsp;<a href="@Url.Action("Logout","Home")" style="color:white">Log Out</a></span>
+                        <div class="top-nav notification-row">
+                            <!-- notificatoin dropdown start-->
+                            <ul class="nav pull-right top-menu">
+                                <li class="dropdown user-menu">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                        <span class="profile-ava">
+                                            <i class="glyphicon glyphicon-user"></i>
+                                        </span>
+                                        <span class="user-name"></span>
+                                        <span class="arrow"><b class="arrow_carrot-down"></b></span>
+                                    </a>
+                                    @*<ul class="dropdown-menu extended logout">
+                                            <div class="log-arrow-up"></div>
+                                            <li class="eborder-top">
+                                                <a href="#"><i class="icon_profile"></i> My Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icon_chat_alt"></i> Chats</a>
+                                            </li>
+                                            <li>
+                                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                                            </li>
+                                            <li>
+                                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                                            </li>
+                                            <li>
+                                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                                            </li>
+                                        </ul>*@
+                                </li>
+                                <!-- user login dropdown end -->
+                            </ul>
+                            <!-- notificatoin dropdown end-->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="wrapper container-fluid">
+                <div class="main-breadcrumb">
+                    @Html.Raw(MvcBreadCrumbs.BreadCrumb.Display())
+                </div>
+                <div class="clearfix">
+                    @RenderBody()
+                </div>
+            </section>
+            <div class="sidebarOff"></div>
+        </section>
+    </section>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @RenderSection("GraphScripts", required: false)
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+

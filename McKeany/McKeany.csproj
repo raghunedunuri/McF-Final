@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--
+    This section defines project-level properties.
+
+    AssemblyName
+      Name of the output assembly.
+    Configuration
+      Specifies a default value for debug.
+    OutputType
+      Must be "Library" for VSTO.
+    Platform
+      Specifies what CPU the output of this project can run on.
+    NoStandardLibraries
+      Set to "false" for VSTO.
+    RootNamespace
+      In C#, this specifies the namespace given to new files. In VB, all objects are
+      wrapped in this namespace at runtime.
+  -->
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A33C1758-609B-42B5-8EEA-B4A8577C2CAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>McKeany</RootNamespace>
+    <AssemblyName>McKeany</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <DefineConstants>VSTO40</DefineConstants>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>D:\Saven\McKeany_Plugin25\</PublishUrl>
+    <InstallUrl />
+    <TargetCulture>en</TargetCulture>
+    <ApplicationVersion>1.0.0.46</ApplicationVersion>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>McKeany</ProductName>
+    <PublisherName />
+    <SupportUrl />
+    <FriendlyName>McKeany</FriendlyName>
+    <OfficeApplicationDescription />
+    <LoadBehavior>3</LoadBehavior>
+  </PropertyGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <!--
+      OfficeApplication
+        Add-in host application
+    -->
+    <OfficeApplication>Excel</OfficeApplication>
+  </PropertyGroup>
+  <!--
+    This section defines properties that are set when the "Debug" configuration is selected.
+
+    DebugSymbols
+      If "true", create symbols (.pdb). If "false", do not create symbols.
+    DefineConstants
+      Constants defined for the preprocessor.
+    EnableUnmanagedDebugging
+      If "true", starting the debugger will attach both managed and unmanaged debuggers.
+    Optimize
+      If "true", optimize the build output. If "false", do not optimize.
+    OutputPath
+      Output path of project relative to the project file.
+    WarningLevel
+      Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!--
+    This section defines properties that are set when the "Release" configuration is selected.
+
+    DebugSymbols
+      If "true", create symbols (.pdb). If "false", do not create symbols.
+    DefineConstants
+      Constants defined for the preprocessor.
+    EnableUnmanagedDebugging
+      If "true", starting the debugger will attach both managed and unmanaged debuggers.
+    Optimize
+      If "true", optimize the build output. If "false", do not optimize.
+    OutputPath
+      Output path of project relative to the project file.
+    WarningLevel
+      Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!--
+    This section specifies references for the project.
+  -->
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>packages\Unity.5.8.11\lib\net46\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.8.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.8.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop.Forms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Unity.Abstractions, Version=3.3.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>packages\Unity.5.8.11\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.2.5.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>packages\Unity.5.8.11\lib\net46\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.8.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>packages\Unity.5.8.11\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.5.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>packages\Unity.5.8.11\lib\net46\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.1.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>packages\Unity.5.8.11\lib\net46\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.1.9.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>packages\Unity.5.8.11\lib\net46\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>packages\Unity.5.8.11\lib\net46\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <!--
+    This section defines the user source files that are part of the project.
+     
+    A "Compile" element specifies a source file to compile.
+    An "EmbeddedResource" element specifies an .resx file for embedded resources.
+    A "None" element specifies a file that is not to be passed to the compiler (for instance, 
+    a text file or XML file).
+    The "AppDesigner" element specifies the directory where the application properties files
+    can be found.
+  -->
+  <ItemGroup>
+    <Compile Include="AddTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTable.Designer.cs">
+      <DependentUpon>AddTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CocoaGrindCommon.cs" />
+    <Compile Include="Common\DataTablesCommon.cs" />
+    <Compile Include="Common\CornCommon.cs" />
+    <Compile Include="Common\PCCommon.cs" />
+    <Compile Include="Common\SweetnerCommon.cs" />
+    <Compile Include="Sweetners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sweetners.Designer.cs">
+      <DependentUpon>Sweetners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTables.Designer.cs">
+      <DependentUpon>DataTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cocoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cocoa.Designer.cs">
+      <DependentUpon>Cocoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SugarCommon.cs" />
+    <Compile Include="Common\BHCommon.cs" />
+    <Compile Include="Common\CocoaCommon.cs" />
+    <Compile Include="Common\WasdeDomesticCommon.cs" />
+    <Compile Include="Common\WasdeWorldCommon.cs" />
+    <Compile Include="Common\HPCommon.cs" />
+    <Compile Include="COT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COT.Designer.cs">
+      <DependentUpon>COT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTNCC.Designer.cs">
+      <DependentUpon>DTNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CocoaSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CocoaSD.Designer.cs">
+      <DependentUpon>CocoaSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Corn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Corn.Designer.cs">
+      <DependentUpon>Corn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalCommodities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalCommodities.Designer.cs">
+      <DependentUpon>PhysicalCommodities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserData.Designer.cs">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WASDEWorld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WASDEWorld.Designer.cs">
+      <DependentUpon>WASDEWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WASDEDomestic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WASDEDomestic.Designer.cs">
+      <DependentUpon>WASDEDomestic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCommon.cs" />
+    <Compile Include="Ethanol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ethanol.Designer.cs">
+      <DependentUpon>Ethanol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sugar.Designer.cs">
+      <DependentUpon>Sugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CattleOnFeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CattleOnFeed.Designer.cs">
+      <DependentUpon>CattleOnFeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrolierChiken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrolierChiken.Designer.cs">
+      <DependentUpon>BrolierChiken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CFCommon.cs" />
+    <Compile Include="Common\FOCommon.cs" />
+    <Compile Include="Common\CECommon.cs" />
+    <Compile Include="Common\CROPCommon.cs" />
+    <Compile Include="Common\COTCommon.cs" />
+    <Compile Include="Common\USWeeklyCommon.cs" />
+    <Compile Include="Common\EthanolCommon.cs" />
+    <Compile Include="Common\DTNCommon.cs" />
+    <Compile Include="ChickenAndEggs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenAndEggs.Designer.cs">
+      <DependentUpon>ChickenAndEggs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USWeekly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USWeekly.Designer.cs">
+      <DependentUpon>USWeekly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FatsAndOils.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FatsAndOils.Designer.cs">
+      <DependentUpon>FatsAndOils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HogPigs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HogPigs.Designer.cs">
+      <DependentUpon>HogPigs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CropProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CropProgress.Designer.cs">
+      <DependentUpon>CropProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DataOperations.cs" />
+    <Compile Include="DTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTN.Designer.cs">
+      <DependentUpon>DTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CFTCModel.cs" />
+    <Compile Include="EIAModels.cs" />
+    <Compile Include="NewTabRi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewTabRi.Designer.cs">
+      <DependentUpon>NewTabRi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnityResolver.cs" />
+    <EmbeddedResource Include="AddTable.resx">
+      <DependentUpon>AddTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sweetners.resx">
+      <DependentUpon>Sweetners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTables.resx">
+      <DependentUpon>DataTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cocoa.resx">
+      <DependentUpon>Cocoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COT.resx">
+      <DependentUpon>COT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTNCC.resx">
+      <DependentUpon>DTNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CocoaSD.resx">
+      <DependentUpon>CocoaSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Corn.resx">
+      <DependentUpon>Corn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalCommodities.resx">
+      <DependentUpon>PhysicalCommodities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserData.resx">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WASDEWorld.resx">
+      <DependentUpon>WASDEWorld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WASDEDomestic.resx">
+      <DependentUpon>WASDEDomestic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ethanol.resx">
+      <DependentUpon>Ethanol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sugar.resx">
+      <DependentUpon>Sugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CattleOnFeed.resx">
+      <DependentUpon>CattleOnFeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrolierChiken.resx">
+      <DependentUpon>BrolierChiken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenAndEggs.resx">
+      <DependentUpon>ChickenAndEggs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USWeekly.resx">
+      <DependentUpon>USWeekly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FatsAndOils.resx">
+      <DependentUpon>FatsAndOils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HogPigs.resx">
+      <DependentUpon>HogPigs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CropProgress.resx">
+      <DependentUpon>CropProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTN.resx">
+      <DependentUpon>DTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewTabRi.resx">
+      <DependentUpon>NewTabRi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="McKeany_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Ribbon.cs">
+      <XmlRibbon>true</XmlRibbon>
+    </Compile>
+    <Compile Include="ThisAddIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="root_table.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ThisAddIn.Designer.xml">
+      <DependentUpon>ThisAddIn.cs</DependentUpon>
+    </None>
+    <Compile Include="ThisAddIn.Designer.cs">
+      <DependentUpon>ThisAddIn.Designer.xml</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ribbon.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_search_326690.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dataset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\McF.Business\McF.Business.csproj">
+      <Project>{45bb1e84-c693-4d7a-8a72-b9b1db27aa5d}</Project>
+      <Name>McF.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\McF.Common\McF.Common.csproj">
+      <Project>{c94eaf40-9271-4a75-b6da-387fdc7326d1}</Project>
+      <Name>McF.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\McF.Contracts\McF.Contracts.csproj">
+      <Project>{e75b8f2b-14d3-4008-b2ea-801686552452}</Project>
+      <Name>McF.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\McF.DataAccess\McF.DataAccess.csproj">
+      <Project>{d1d2825c-add2-4a03-b3da-53b055703231}</Project>
+      <Name>McF.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cocoa.png" />
+    <Content Include="Resources\Ehtanol.jpg" />
+    <Content Include="Resources\livestock.jpg" />
+    <Content Include="Resources\Share.jpg" />
+    <Content Include="Resources\usda.png" />
+    <Content Include="Resources\user.png" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>McKeany_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8FBE22270C78341C1A6D1F69EE9CEF0FBCFD9222</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <!-- Include the build rules for a C# project. -->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- Include additional build rules for an Office application add-in. -->
+  <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- This section defines VSTO properties that describe the host-changeable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="Excel" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Excel" Language="cs" TemplatesPath="" DebugInfoExeName="#Software\Microsoft\Office\15.0\Excel\InstallRoot\Path#excel.exe" DebugInfoCommandLine="/x" AddItemTemplatesGuid="{51063C3A-E220-4D12-8922-BDA915ACD783}" />
+        <Host Name="Excel" GeneratedCodeNamespace="McKeany" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
+          <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" PublishedHash="C9269A81E4350CF6C6AAB24285C43B9F6880C25A" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+}
+@model McF.Models.LoginViewModel
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/bootstrap")
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(s => s.ReturnURL)
+        <div>
+            @if (TempData["ErrorMSG"] != null)
+                {
+                <div class="alert alert-danger">
+                    <center><strong>@TempData["ErrorMSG"]</strong></center>
+                </div>
+                    <br /><br />
+            }
+        </div>
+        <div style="padding-top:100px">
+            <div class="module form-module">
+                <div class="toggle">
+                    <i class="fa fa-times fa-pencil" style="padding-top: 8px !important;"></i>
+                    <div class="tooltip">Click Me</div>
+                </div>
+                <div class="form">
+                    <h2>Login to your account</h2>
+                    <form>
+                        @Html.TextBoxFor(s => s.Username, new { @placeholder = "Username" })
+                        <br />
+                        @Html.PasswordFor(s => s.Password, new { @placeholder = "Password" })
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-xs-5">@Html.ActionLink("Register Here", "Register", "Home")</div>
+                                <div class="col-xs-2">|</div>
+                                <div class="col-xs-5">@Html.ActionLink("Reset Password", "ResetPassword", "Home")</div>
+                            </div>
+                        </div>
+                         
+                        <br /><br />
+                        <button command="login">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>

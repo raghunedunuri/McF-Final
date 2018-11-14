@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CORN</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="selector">
+                    <select id="mapDropdown" class="form-control">
+                        <option value="a">Beginning Stocks</option>
+                        <option value="b">Production Imports</option>
+                        <option value="c">Domestic Feed</option>
+                        <option value="d">Domestic Total 2/</option>
+                        <option value="e">Exports	</option>
+                        <option value="f">Ending Stocks</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="mapcontainer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+@section GraphScripts {
+    <script type="text/javascript" src="~/Scripts/graphs/highmaps.js"></script>
+    <script type="text/javascript" src="~/Scripts/graphs/index.js"></script>
+}
+

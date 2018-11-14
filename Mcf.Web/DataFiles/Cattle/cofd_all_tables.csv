@@ -1,0 +1,198 @@
+1,"t","Cattle on Feed: Released June 22, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+1,"t","Cattle on Feed Inventory, Placements, Marketings, and Other Disappearance on 1,000+ Capacity Feedlots – United States: June 1, 2017 and 2018"
+1,"h","","","",""
+1,"h","","Number","Number","Percent of"
+1,"h","Item","","",""
+1,"h","","2017","2018","previous year"
+1,"h","","","",""
+1,"u","","(1,000 head)","(1,000 head)","(percent)"
+1,"d","On feed May 1",10998,11558,105
+1,"d","Placed on feed during May",2119,2124,100
+1,"d","Fed cattle marketed during May",1951,2056,105
+1,"d","Other disappearance during May",70,73,104
+1,"d","On feed June 1",11096,11553,104
+1,"c",""
+2,"t","Cattle on Feed: Released June 22, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+2,"t","Cattle on Feed Inventory, Placements, Marketings, and Other Disappearance on 1,000+ Capacity Feedlots – United States: May 1, 2017 and 2018"
+2,"h","","","",""
+2,"h","","Number","Number","Percent of"
+2,"h","Item","","",""
+2,"h","","2017","2018","previous year"
+2,"h","","","",""
+2,"u","","(1,000 head)","(1,000 head)","(percent)"
+2,"d","On feed April 1",10919,11729,107
+2,"d","Placed on feed during April",1848,1695,92
+2,"d","Fed cattle marketed during April",1703,1803,106
+2,"d","Other disappearance during April",66,63,95
+2,"d","On feed May 1",10998,11558,105
+2,"c",""
+7,"t","Cattle on Feed: Released June 22, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+7,"t","Cattle on Feed Inventory on 1,000+ Capacity Feedlots by Month – States and United States: 2017 and 2018"
+7,"h","","","","","",""
+7,"h","","","","June 1, 2018","June 1, 2018","June 1, 2018"
+7,"h","","","","","",""
+7,"h","State","June 1, 2017","May 1, 2018","","Percent of","Percent of"
+7,"h","","","","Number","previous year","previous month"
+7,"h","","","","","",""
+7,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(percent)","(percent)"
+7,"d","Arizona",246,298,298,121,100
+7,"d","California",440,500,525,119,105
+7,"d","Colorado",970,940,950,98,101
+7,"d","Idaho",270,255,245,91,96
+7,"d","Iowa",680,730,720,106,99
+7,"d","Kansas",2270,2290,2320,102,101
+7,"d","Minnesota",145,155,145,100,94
+7,"d","Nebraska",2350,2660,2530,108,95
+7,"d","Oklahoma",330,310,315,95,102
+7,"d","South Dakota",240,255,235,98,92
+7,"d","Texas",2650,2630,2730,103,104
+7,"d","Washington",205,210,220,107,105
+7,"d","",,,,,
+7,"d","Other States",300,325,320,107,98
+7,"d","",,,,,
+7,"d","United States",11096,11558,11553,104,100
+7,"c",""
+8,"t","Cattle on Feed: Released June 22, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+8,"t","Cattle Placed on Feed on 1,000+ Capacity Feedlots by Month – States and United States: 2017 and 2018"
+8,"h","","","","","",""
+8,"h","","","","During May 2018","During May 2018","During May 2018"
+8,"h","","During","During","","",""
+8,"h","State","May 2017","April 2018","","Percent of","Percent of"
+8,"h","","","","Number","previous year","previous month"
+8,"h","","","","","",""
+8,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(percent)","(percent)"
+8,"d","Arizona",26,26,22,85,85
+8,"d","California",71,59,88,124,149
+8,"d","Colorado",160,145,170,106,117
+8,"d","Idaho",39,28,36,92,129
+8,"d","Iowa",85,80,80,94,100
+8,"d","Kansas",440,380,480,109,126
+8,"d","Minnesota",17,12,16,94,133
+8,"d","Nebraska",445,420,465,104,111
+8,"d","Oklahoma",80,60,70,88,117
+8,"d","South Dakota",39,25,29,74,116
+8,"d","Texas",640,385,570,89,148
+8,"d","Washington",41,27,42,102,156
+8,"d","",,,,,
+8,"d","Other States",36,48,56,156,117
+8,"d","",,,,,
+8,"d","United States",2119,1695,2124,100,125
+8,"c",""
+66,"t","Cattle on Feed: Released June 22, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+66,"t","Cattle Placed on Feed by Weight Group on 1,000+ Capacity Feedlots and Month – States and United States: 2017 and 2018"
+66,"h","","","","","","","","",""
+66,"h","","During May 2017","During May 2017","During May 2017","During May 2017","During May 2017","During May 2017","During May 2017","During May 2017"
+66,"h","","","","","","","","",""
+66,"h","State","Under 600 lbs","600-699 lbs","700-799 lbs","800-899 lbs","900+ lbs1/","900-999 lbs","1,000+ lbs","Total"
+66,"h","","","","","","","","",""
+66,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)"
+66,"d","Colorado",25,20,35,45,35,"(D)","(D)",160
+66,"d","Kansas",50,70,135,115,70,"(D)","(D)",440
+66,"d","Nebraska",50,50,95,130,120,"(D)","(D)",445
+66,"d","Texas",155,125,180,145,35,"(D)","(D)",640
+66,"d","",,,,,,,,
+66,"d","Other States",120,50,84,115,65,"(D)","(D)",434
+66,"d","",,,,,,,,
+66,"d","United States",400,315,529,550,"(X)",235,90,2119
+66,"h","","","","","","","","",""
+66,"h","","During April 2018","During April 2018","During April 2018","During April 2018","During April 2018","During April 2018","During April 2018","During April 2018"
+66,"h","","","","","","","","",""
+66,"h","State","Under 600 lbs","600-699 lbs","700-799 lbs","800-899 lbs","900+ lbs 1/","900-999 lbs","1,000+ lbs","Total"
+66,"h","","","","","","","","",""
+66,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)"
+66,"d","Colorado",25,20,35,40,25,"(D)","(D)",145
+66,"d","Kansas",40,55,105,110,70,"(D)","(D)",380
+66,"d","Nebraska",40,45,95,125,115,"(D)","(D)",420
+66,"d","Texas",115,70,100,75,25,"(D)","(D)",385
+66,"d","",,,,,,,,
+66,"d","Other States",100,40,80,95,50,"(D)","(D)",365
+66,"d","",,,,,,,,
+66,"d","United States",320,230,415,445,"(X)",205,80,1695
+66,"h","","","","","","","","",""
+66,"h","","During May 2018","During May 2018","During May 2018","During May 2018","During May 2018","During May 2018","During May 2018","During May 2018"
+66,"h","","","","","","","","",""
+66,"h","State","Under 600 lbs","600-699 lbs","700-799 lbs","800-899 lbs","900+ lbs 1/","900-999 lbs","1,000+ lbs","Total"
+66,"h","","","","","","","","",""
+66,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)","(1,000 head)"
+66,"d","Colorado",25,25,35,45,40,"(D)","(D)",170
+66,"d","Kansas",60,85,135,125,75,"(D)","(D)",480
+66,"d","Nebraska",45,55,95,140,130,"(D)","(D)",465
+66,"d","Texas",185,120,130,105,30,"(D)","(D)",570
+66,"d","",,,,,,,,
+66,"d","Other States",130,55,85,109,60,"(D)","(D)",439
+66,"d","",,,,,,,,
+66,"d","United States",445,340,480,524,"(X)",235,100,2124
+66,"c",""
+66,"f","(D)  Withheld to avoid disclosing data for individual operations."
+66,"f","(X)  Not applicable."
+66,"f","1/ The 900 pounds and greater weight group is the sum of 900-999 pounds and 1,000 pounds and greater weight groups."
+11,"t","Cattle on Feed: Released June 22, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+11,"t","Cattle Marketed on 1,000+ Capacity Feedlots by Month – States and United States: 2017 and 2018"
+11,"h","","","","","",""
+11,"h","","","","During May 2018","During May 2018","During May 2018"
+11,"h","","During","During","","",""
+11,"h","State","May 2017","April 2018","","Percent of","Percent of"
+11,"h","","","","Number","previous year","previous month"
+11,"h","","","","","",""
+11,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(percent)","(percent)"
+11,"d","Arizona",22,21,21,95,100
+11,"d","California",53,56,60,113,107
+11,"d","Colorado",140,150,150,107,100
+11,"d","Idaho",42,21,45,107,214
+11,"d","Iowa",82,87,87,106,100
+11,"d","Kansas",435,420,440,101,105
+11,"d","Minnesota",26,16,25,96,156
+11,"d","Nebraska",530,430,570,108,133
+11,"d","Oklahoma",58,59,64,110,108
+11,"d","South Dakota",51,27,45,88,167
+11,"d","Texas",440,445,460,105,103
+11,"d","Washington",35,26,31,89,119
+11,"d","",,,,,
+11,"d","Other States",37,45,58,157,129
+11,"d","",,,,,
+11,"d","United States",1951,1803,2056,105,114
+11,"c",""
+12,"t","Cattle on Feed: Released June 22, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+12,"t","Cattle Other Disappearance on 1,000+ Capacity Feedlots by Month – States and United States: 2017 and 2018"
+12,"h","","","","","",""
+12,"h","","","","During May 2018","During May 2018","During May 2018"
+12,"h","","During","During","","",""
+12,"h","State","May 2017","April 2018","","Percent of","Percent of"
+12,"h","","","","Number","previous year","previous month"
+12,"h","","","","","",""
+12,"u","","(1,000 head)","(1,000 head)","(1,000 head)","(percent)","(percent)"
+12,"d","Arizona",1,1,1,100,100
+12,"d","California",3,3,3,100,100
+12,"d","Colorado",10,5,10,100,200
+12,"d","Idaho",2,2,1,50,50
+12,"d","Iowa",3,3,3,100,100
+12,"d","Kansas",15,10,10,67,100
+12,"d","Minnesota",1,1,1,100,100
+12,"d","Nebraska",15,20,25,167,125
+12,"d","Oklahoma",2,1,1,50,100
+12,"d","South Dakota",3,3,4,133,133
+12,"d","Texas",10,10,10,100,100
+12,"d","Washington",1,1,1,100,100
+12,"d","",,,,,
+12,"d","Other States",4,3,3,75,100
+12,"d","",,,,,
+12,"d","United States",70,63,73,104,116
+12,"c",""
+52,"t","Cattle on Feed: Released June 22, 2018, by the National Agricultural Statistics Service (NASS), Agricultural Statistics Board, United States Department of Agriculture (USDA)."
+52,"t","Reliability of Monthly Cattle on Feed Estimates"
+52,"t","[Based on data for the past 24 months]"
+52,"h","","","","","","","",""
+52,"h","","Root mean","90 percent","Difference between first and latest estimate","Difference between first and latest estimate","Difference between first and latest estimate","Difference between first and latest estimate","Difference between first and latest estimate"
+52,"h","","square error","confidence","","","","",""
+52,"h","","","level","","","","",""
+52,"h","Item","","","","","","Months","Months"
+52,"h","","","","","","","",""
+52,"h","","","","Average","Smallest","Largest","Below latest","Above latest"
+52,"h","","","","","","","",""
+52,"u","","(percent)","(percent)","(1,000)","(1,000)","(1,000)","(number)","(number)"
+52,"d","Number on feed",0.0,0.1,1,0,15,2,1
+52,"d","",,,,,,,
+52,"d","Placements",0.2,0.4,2,0,15,2,2
+52,"d","",,,,,,,
+52,"d","Marketings",0.1,0.2,0,0,10,0,1
+52,"c",""

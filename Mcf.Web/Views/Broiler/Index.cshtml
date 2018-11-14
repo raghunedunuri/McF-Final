@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main-title clearfix">
+    <h1 class="title">Broiler & Hatchery</h1>
+</div>
+<div ng-controller="broilercontroller" ng-init="GetCurrentJobInfo('BROILERANDHATCHERY');" ng-cloak>
+    <uib-accordion>
+        <div uib-accordion-group class="panel-default" heading="Job Summary" is-open="isopen" ng-click="isopen=!isopen" style="cursor:pointer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-lg-3"><span style="font-size:16px">Status</span></div>
+                            <div class="col-lg-3"><span style="font-size:16px">Message</span></div>
+                            <div class="col-lg-3"><span style="font-size:16px">Start Time</span></div>
+                            <div class="col-lg-3"><span style="font-size:16px">New Records</span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-lg-3"><b style="font-size:18px" ng-bind="broilerjobinfo.status"></b></div>
+                            <div class="col-lg-3"><b style="font-size:18px" ng-bind="broilerjobinfo.message"></b></div>
+                            <div class="col-lg-3"><b style="font-size:18px" ng-bind="broilerjobinfo.startTime"></b></div>
+                            <div class="col-lg-3"><b style="font-size:18px" ng-bind="broilerjobinfo.newRecords"></b></div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-lg-3"><span style="font-size:16px">New Symbols</span></div>
+                            <div class="col-lg-3"><span style="font-size:16px">Updated Records</span></div>
+                            <div class="col-lg-3"><span style="font-size:16px">Un Mapped Records</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-lg-3"><b style="font-size:18px" ng-bind="broilerjobinfo.newSymbols"></b></div>
+                            <div class="col-lg-3"><b style="font-size:18px" ng-bind="broilerjobinfo.updatedRecords"></b></div>
+                            <div class="col-lg-3"><b style="font-size:18px" ng-bind="broilerjobinfo.unmappedRecords"></b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </uib-accordion>
+    <br />
+    <uib-accordion>
+        <div uib-accordion-group class="panel-default" heading="Raw Data" is-open="isopen" ng-click="isopen=!isopen" style="cursor:pointer">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id='table-container' style="overflow:auto;height:100%;width:auto"></div>
+                </div>
+            </div>
+        </div>
+    </uib-accordion>
+    <br />
+    <uib-accordion>
+        <div uib-accordion-group class="panel-default" heading="Formatted Data" is-open="true">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="col-xs-4">
+                        <span class="text"></span>
+                        Commodity:
+                        <select class="form-control" id="selCommodity" readonly="readonly"></select>
+                    </div>
+                    <div class="col-xs-2">
+                        <span class="text">Start Date: </span><div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control" id="startDate">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <span class="text">End Date: </span><div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control" id="endDate">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <span class="text"></span>
+                        Select Duration:
+                        <select class="form-control" id="selduration">
+                            <option value="1">Last Updated</option>
+                            <option value="2">Last 30 days</option>
+                            <option value="3">Last 3 months</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-2">
+                        <span class="text">&zwnj;</span>
+                        <div class="input-group date">
+                            <button class="btn btn-success" id="btnGo" ng-click="GetBroilerFormattedData()">GO</button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-default" id="btnReset" ng-click="ClearFilters()" title="Refresh"><i class="fa fa-refresh"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="panel-group" ng-repeat="grid in gridOptions">
+                <div class="text-right"><button class="btn btn-primary margin-bottom8" ng-click="addData(grid,'')">ADD DATA</button></div>                
+                <div>
+                    <div ui-grid="grid" ui-grid-pagination ui-grid-edit ui-grid-row-edit ui-grid-cellNav ui-grid-resize-columns ui-grid-selection ui-grid-exporter class="grid" ng-cloak></div><br /><br />
+                </div>
+            </div>
+        </div>
+    </uib-accordion>
+    
+</div>

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "CornStocks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Corn Stocks</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="selector">
+                    <select id="mapDropdown" class="form-control">
+                        <option value="line">Line</option>
+                        <option value="area">Area</option>
+                        <option value="ohlc">HLOC</option>
+                        <option value="candlestick">Candlestick</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="mapcontainer"></div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+@section GraphScripts {
+    <script type="text/javascript" src="~/Scripts/graphs/highstock.js"></script>
+<script type="text/javascript" src="~/Scripts/graphs/cornstocks.js"></script>
+}
+
